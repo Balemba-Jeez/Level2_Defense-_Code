@@ -1,0 +1,125 @@
+.footercomponent {
+    border: solid red;
+}
+
+.footercomponent .footertop {
+    border: solid 2px blue;
+}
+
+.footercomponent .footertop .footertopleft {
+    border: solid 2px yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 200px 0px;
+}
+
+.footercomponent .footertop .footertopleft .footerlogotext {
+    border: solid 2px;
+    width: 195.43px;
+    height: 53.533px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footercomponent .footertop .footertopleft .footerlogotext img {
+    border: ;
+    width: 60px;
+    height: 60px;
+    margin-top: -8px;
+}
+
+
+.footercomponent .footertop .footertopleft .footerlogotext p {
+    border: ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: ;
+    font-size: 180%;
+    letter-spacing: -1px;
+    word-spacing: -2px;
+    width: 134.9px;
+    height: 27.733px;
+    margin-left: -12px;
+    margin-top: 3.8px;
+}
+
+.footercomponent .footertop .footertopleft .footerlogotext p span {
+    border: ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 560;
+    font-size: 100%;
+}
+
+.footercomponent .footertop .footertopleft .footerdownloadbuttons {
+    border: solid;
+    height: 48.45px;
+    width: 294px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 15px;
+}
+
+.footercomponent .footertop .footertopleft .footerdownloadbuttons a {
+    cursor: pointer;
+}
+
+.footercomponent .footertop .footertopleft .footerdownloadbuttons a img {
+    width: 135px;
+    height: 40.45px;
+}
+
+.footercomponent .footertop .footertopleft .footerdownloadbuttons a:nth-child(1) img {
+    padding-top: 4px;
+}
+
+
+.footercomponent .footertop .footertopleft .footerdownloadbuttons a:nth-child(2) img {
+    height: 48.45px;
+    width: 145px;
+}
+
+table {
+    border: ;
+    border-spacing: ;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+}
+
+.footercomponent .footertop .footerright table tr {
+    border: ;
+}
+
+.footercomponent .footertop .footerright table tr th {
+    border: ;
+    font-weight: 750;
+    padding-top: 0px;
+    padding-bottom: 14px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: start;
+}
+
+.footercomponent .footertop .footerright table tr td {
+    border: ;
+    width: 277.833px;
+    height: 24px;
+    padding-top: 0px;
+    padding-bottom: 14px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.footercomponent .footertop .footerright table tr:nth-child(4) td {
+    border: solid;
+}
+
+.footercomponent .footertop .footerright table tr:nth-child(4) td p {
+    border: ;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.footercomponent .footertop .footerright table tr:nth-child(4) td img {
+    border: solid;
+}

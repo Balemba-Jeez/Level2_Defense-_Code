@@ -8,7 +8,7 @@ import SetAddressSectionComponent from './Components/setAddressSectionComponent'
 import WelcomeScreenSizeSectionComponent from './Components/welcomeScreenSizeSectionComponent';
 import BusinessBenefitsSectionComponent from  './Components/businessBenefitsSectionComponent';
 import WelcomeOverScreenSizeSectionComponent from './Components/welcomeOverScreenSizeSection'
-
+import FooterComponent from './Components/footerComponent';
 function App() {
   return (
     <div className="App">
@@ -20,6 +20,7 @@ function App() {
       {/*<BusinessBenefitsSectionComponent />*/}
       <WelcomeScreenSizeSectionComponent />
       <WelcomeOverScreenSizeSectionComponent />
+      <FooterComponent />
       
     </div>
   );

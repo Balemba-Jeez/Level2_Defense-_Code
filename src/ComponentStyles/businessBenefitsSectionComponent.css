@@ -1,15 +1,16 @@
 .businessbenefitssectioncomponent {
-    border: solid 2px green;
+    border: ;
     display: flex;
     flex-direction: row;
-    gap: 0px 12px;
+    gap: 0px 33px;
     height: 318.05px;
+    width: 1339px;
 }
 
 .businessbenefitssectioncomponent a img {
     border: none;
-    width: 400px;
-    height: 221.717px;
+    width: 413px;
+    height: 221.719px;
     margin-bottom: 8px;
 }
 

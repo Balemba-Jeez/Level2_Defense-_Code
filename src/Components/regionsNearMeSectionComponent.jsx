@@ -8,13 +8,17 @@ class RegionsNearMeSectionComponent extends Component {
             <div className='regionsnearmesection'>
 
                 <div className='titleregion'>
-                    <h2>Quarters near me</h2>
+                    <h2>Regions with Gas Space</h2>
                     <a href="">View all regions</a>
                 </div>
 
 
                 <div className='listregion'>
                     <table>
+                        <tr>
+                            <th colSpan={"2"}>ENG :</th>
+                            <th>FR :</th>
+                        </tr>
                         <tr>
                             <td>Adamawa</td>
                             <td>Centre</td>

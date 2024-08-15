@@ -1,5 +1,5 @@
 .regionsnearmesection {
-    border: solid 2px yellow;
+    border: ;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -55,6 +55,16 @@
 
 .regionsnearmesection .listregion table tr {
     border: ;
+}
+
+.regionsnearmesection .listregion table tr th {
+    border: ;
+    font-weight: 750;
+    padding-top: 0px;
+    padding-bottom: 14px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: start;
 }
 
 .regionsnearmesection .listregion table tr td {

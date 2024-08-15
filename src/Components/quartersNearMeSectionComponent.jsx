@@ -7,7 +7,7 @@ class QuartersNearMeSectionComponent extends Component {
             <div className='quartersnearmesectioncomponent'>
                 <div className='title'>
                     <h2>Quarters near me</h2>
-                    <a href="">View all 20+ quartes</a>
+                    <a href="">View all 20+ quarters</a>
                 </div>
 
                 <div className='map'>

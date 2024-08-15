@@ -47,6 +47,7 @@
     flex-direction: row;
     margin-left: 6px;
     margin-top: 10.8px;
+    cursor: pointer;
 }
 
 .header_rightitem div:nth-child(2) img {
