@@ -1,0 +1,25 @@
+.addressinputcomponent {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.addressinputcomponent button {
+    border: hidden;
+    border-radius: 6px;
+    background-color: black;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.addressinputcomponent button:hover {
+    background-color: #282828;
+    cursor: pointer;
+}

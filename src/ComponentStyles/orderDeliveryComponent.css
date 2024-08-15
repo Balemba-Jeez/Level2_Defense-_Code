@@ -1,0 +1,17 @@
+.orderdeliverycomponent {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0px;
+}
+
+.orderdeliverycomponent h1 {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 520px;
+    height: 64px;
+    font-size: 50px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+}

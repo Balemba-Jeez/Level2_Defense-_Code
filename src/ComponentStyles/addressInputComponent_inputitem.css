@@ -1,0 +1,57 @@
+.addressinputcomponent .addressinputcomponent_inputitem {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 16px;
+    width: 511px;
+    height: 48px;
+    background-color: white;
+}
+
+.addressinputcomponent .addressinputcomponent_inputitem img {
+    width: 24px;
+    height: 24px;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.addressinputcomponent .addressinputcomponent_inputitem .addressinputcomponent_rightinputitem {
+    border: none;
+    width: 469px;
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 8px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+}
+
+.addressinputcomponent .addressinputcomponent_inputitem .addressinputcomponent_rightinputitem input {
+    width: 420px;
+    height: 40px;
+    border: none;
+    padding: 0px;
+    font-family: "Barlow", sans-serif;
+    word-spacing: 1px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.addressinputcomponent .addressinputcomponent_inputitem .addressinputcomponent_rightinputitem input:focus {
+    outline: none;
+}
+
+.addressinputcomponent .addressinputcomponent_inputitem .addressinputcomponent_rightinputitem button {
+    font-size: 14px;
+    font-family: "Barlow", sans-serif;
+    cursor: pointer;
+    border: none;
+    padding-bottom: 13px;
+    padding-top: 15px;
+    font-weight: ;
+    background-color: white;
+    color: black;
+}

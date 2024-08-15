@@ -1,0 +1,8 @@
+.welcomescreensizesectioncomponent {
+    border: solid blue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 170px 0px;
+    /* background-image: url("../../public/gasbackgroundimg1.jpg"); */
+}

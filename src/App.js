@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import HeaderComponent from './Components/headerComponent';
+import AsideComponent from './Components/asideComponent';
+import AddressInputComponent from './Components/addressInputComponent';
+import OrderDeliveryComponent from './Components/orderDeliveryComponent';
+import SetAddressSectionComponent from './Components/setAddressSectionComponent';
+import WelcomeScreenSizeSectionComponent from './Components/welcomeScreenSizeSectionComponent';
+import BusinessBenefitsSectionComponent from  './Components/businessBenefitsSectionComponent';
+import WelcomeOverScreenSizeSectionComponent from './Components/welcomeOverScreenSizeSection'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/*<HeaderComponent />*/}
+      {/*<AsideComponent />*/}
+      {/*<AddressInputComponent />*/}
+      {/*<OrderDeliveryComponent />*/}
+      {/*<SetAddressSectionComponent />*/}
+      {/*<BusinessBenefitsSectionComponent />*/}
+      <WelcomeScreenSizeSectionComponent />
+      <WelcomeOverScreenSizeSectionComponent />
+      
     </div>
   );
 }

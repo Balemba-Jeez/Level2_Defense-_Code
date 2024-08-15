@@ -1,0 +1,47 @@
+.businessbenefitssectioncomponent {
+    border: solid 2px green;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 12px;
+    height: 318.05px;
+}
+
+.businessbenefitssectioncomponent a img {
+    border: none;
+    width: 400px;
+    height: 221.717px;
+    margin-bottom: 8px;
+}
+
+.businessbenefitssectioncomponent a {
+    border: ;
+    display: flex;
+    flex-direction: column;
+    gap: ;
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    color: black;
+    cursor: pointer;
+}
+
+.businessbenefitssectioncomponent a .text {
+    border: ;
+    height: 36px;
+    width: 400px;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.businessbenefitssectioncomponent a .link {
+    border: ;
+    height: 19.3333px;
+    width: 400px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}

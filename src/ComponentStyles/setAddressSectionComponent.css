@@ -1,0 +1,28 @@
+.setaddresssectioncomponent {
+    border: ;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.setaddresssectioncomponent .paymentoptions {
+    width: 300px;
+    height: 52px;
+    background-color: ;
+    border: ;
+}
+
+.setaddresssectioncomponent .paymentoptions img {
+    border: ;
+    width: 52px;
+    height: 52px;
+    margin-left: 0px;
+}
+
+.setaddresssectioncomponent .paymentoptions img:nth-child(2) {
+    border: ;
+    margin-top: 0px;
+    padding-top: 0px;
+    width: 48px;
+    height: 34px;
+    margin-bottom: 9px;
+}

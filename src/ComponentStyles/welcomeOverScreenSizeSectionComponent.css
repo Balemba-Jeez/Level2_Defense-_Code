@@ -1,0 +1,5 @@
+.welcomeoverscreensizesectioncomponent {
+    border: solid rgb(255, 0, 170);
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,190 @@
+.aside_component {
+    border: ;
+    height: 100vh;
+    width: 239.45px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: grid;
+    background-color: white;
+}
+
+.aside_component .asideNavigateBottom {
+    border: ;
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0px;
+    width: 235.45px;
+    height: 117.083px;
+    margin-top: 243px;
+    margin-bottom: 24px;
+}
+
+.aside_component .asideNavigateTop {
+    border: ;
+    width: 235.45px;
+    height: 175px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px 0px;
+}
+
+
+.aside_button {
+    border: ;
+    width: 230.45px;
+    height: 94.217px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px 0px;
+    margin-top: ;
+}
+
+
+
+.aside_component .asideNavigateTop .aside_button a {
+    width: 230.45px;
+    height: 40.217px;
+    padding-top: 8px;
+    margin-left: 0px;
+    border: hidden;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 136%;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    word-spacing: -1px;
+}
+
+
+.aside_component .asideNavigateTop .aside_button .aside_buttonsignUp {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    margin-top: 1px;
+}
+
+.aside_component .asideNavigateTop .aside_button .aside_buttonlogIn {
+    background-color: rgb(243, 243, 243);
+    color: black;
+    margin-bottom: 1px;
+}
+
+
+.aside_component .asideNavigateTop .aside_button .aside_buttonsignUp:hover {
+    background-color: #282828;
+    cursor: pointer;
+}
+
+.aside_component .asideNavigateTop .aside_button .aside_buttonlogIn:hover {
+    background-color: #DDDDDD;
+    cursor: pointer;
+}
+
+.aside_component .asideNavigateTop .aside_optionlist {
+    border: ;
+    width: 235.45px;
+    height: 52.9667;
+}
+
+.aside_component .asideNavigateTop .aside_optionlist ul {
+    border: ;
+    width: 235.45px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.aside_component .asideNavigateTop .aside_optionlist ul li a {
+    border: ;
+    font-family: "Barlow", sans-serif;
+    font-size: 98%;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.aside_component .asideNavigateBottom .aside_appAnticipation {
+    border: ;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 225.9px;
+    height: 56px;
+
+}
+
+.aside_component .asideNavigateBottom .aside_appAnticipation img {
+    width: 56px;
+    height: 56px;
+    border-radius: 15%;
+}
+
+.aside_component .asideNavigateBottom .aside_appAnticipation p {
+    font-family: "Barlow", sans-serif;
+    font-size: 100%;
+    font-weight: 500;
+    margin-top: 8px;
+    height: 39px;
+    width: 153.9px;
+}
+
+.aside_component .asideNavigateBottom .aside_downloadbutton {
+    border: ;
+    width: 227.07px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 8px;
+}
+
+.aside_component .asideNavigateBottom .aside_downloadbutton a {
+    border: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 8px;
+    text-decoration: none;
+    height: 16.167px;
+    width: 71.54px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 500px;
+    padding: 12px;
+}
+
+.aside_component .asideNavigateBottom .aside_downloadbutton a img {
+    width: 16px;
+    height: 16px;
+    border: ;
+}
+
+.aside_component .asideNavigateBottom .aside_downloadbutton a p {
+    border: ;
+    font-family: "Barlow", sans-serif;
+    font-size: 98%;
+    font-weight: 500;
+    color: black;
+    margin-top: -3px;
+    margin-bottom: 0px;
+}
+
+.aside_component .asideNavigateBottom .aside_downloadbutton .aside_Iphonedownloadbutton {}
+
+.aside_component .asideNavigateBottom .aside_downloadbutton .aside_Androiddownloadbutton {
+    width: 78.54px;
+}
+
+.aside_component .asideNavigateBottom .aside_downloadbutton .aside_Iphonedownloadbutton:hover {
+    background-color: #DDDDDD;
+    cursor: pointer;
+}
+
+.aside_component .asideNavigateBottom .aside_downloadbutton .aside_Androiddownloadbutton:hover {
+    background-color: #DDDDDD;
+    cursor: pointer;
+}
