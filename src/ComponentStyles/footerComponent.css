@@ -1,20 +1,28 @@
 .footercomponent {
-    border: solid red;
+    border-top: solid 1px #f3f3f3;
+    width: 100%;
 }
 
 .footercomponent .footertop {
-    border: solid 2px blue;
+    border: ;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 255.667px;
+    padding-left: 40px;
+    padding-right: 0;
+    width: 1218px;
+    height: 311.983px;
 }
 
 .footercomponent .footertop .footertopleft {
-    border: solid 2px yellow;
+    border: ;
     display: flex;
     flex-direction: column;
     gap: 200px 0px;
 }
 
 .footercomponent .footertop .footertopleft .footerlogotext {
-    border: solid 2px;
+    border: ;
     width: 195.43px;
     height: 53.533px;
     display: flex;
@@ -26,6 +34,7 @@
     width: 60px;
     height: 60px;
     margin-top: -8px;
+    margin-left: -19px;
 }
 
 
@@ -50,7 +59,7 @@
 }
 
 .footercomponent .footertop .footertopleft .footerdownloadbuttons {
-    border: solid;
+    border: ;
     height: 48.45px;
     width: 294px;
     display: flex;
@@ -65,6 +74,7 @@
 .footercomponent .footertop .footertopleft .footerdownloadbuttons a img {
     width: 135px;
     height: 40.45px;
+
 }
 
 .footercomponent .footertop .footertopleft .footerdownloadbuttons a:nth-child(1) img {
@@ -86,19 +96,24 @@ table {
 
 }
 
+.footercomponent .footertop .footerright {
+    padding-top: 6px;
+}
+
+.footercomponent .footertop .footerright table tr td a {
+    text-decoration: none;
+    color: black;
+}
+
+.footercomponent .footertop .footerright table tr td a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .footercomponent .footertop .footerright table tr {
     border: ;
 }
 
-.footercomponent .footertop .footerright table tr th {
-    border: ;
-    font-weight: 750;
-    padding-top: 0px;
-    padding-bottom: 14px;
-    padding-left: 0px;
-    padding-right: 0px;
-    text-align: start;
-}
 
 .footercomponent .footertop .footerright table tr td {
     border: ;
@@ -110,16 +125,102 @@ table {
     padding-right: 0px;
 }
 
-.footercomponent .footertop .footerright table tr:nth-child(4) td {
-    border: solid;
+.footercomponent .footertop .footerright table tr:nth-child(7) {
+    margin-top: 27px;
 }
 
-.footercomponent .footertop .footerright table tr:nth-child(4) td p {
+.footercomponent .footertop .footerright table tr:nth-child(7) td:nth-child(2) {
+    border: ;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 8px;
+
+}
+
+.footercomponent .footertop .footerright table tr:nth-child(7) td:nth-child(2) p {
     border: ;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.footercomponent .footertop .footerright table tr:nth-child(4) td img {
-    border: solid;
+.footercomponent .footertop .footerright table tr:nth-child(7) td:nth-child(2) img {
+    border: ;
+    width: 16px;
+    height: 16px;
+}
+
+.footercomponent .footerbottom {
+    border-top: #F3F3F3 1px solid;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 40px;
+    width: 1181px;
+}
+
+.footercomponent .footerbottom a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footercomponent .footerbottom a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footercomponent .footerbottom .footerbottombegin {
+    border: ;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 510.365px;
+}
+
+.footercomponent .footerbottom .footerbottombegin .bottomleft {
+    border: ;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 24px;
+    width: 96;
+}
+
+.footercomponent .footerbottom .footerbottombegin .bottomleft a img {
+    border: ;
+    width: 16px;
+    height: 16px;
+}
+
+.footercomponent .footerbottom .footerbottombegin .bottomright {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 40px;
+}
+
+.footercomponent .footerbottom .footerbottomend {
+    border: ;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0px 40px;
+}
+
+.footercomponent .footerbottom .footerbottomend p {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footercomponent .footerbottom .footerbottomend a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: black;
+    cursor: pointer;
+}
+
+.footercomponent .footerbottom .footerbottomend a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }

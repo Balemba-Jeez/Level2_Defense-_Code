@@ -10,8 +10,6 @@
     display: flex;
     justify-content: space-between;
     font-family: "Barlow", sans-serif;
-    margin-left: 40px;
-    margin-right: 40px;
     width: 1251px;
     height: 44px;
 }
@@ -23,14 +21,18 @@
     margin-bottom: 0px;
     height: 44px;
     text-align: center;
+    margin-left: 40px;
 }
 
+
+
 .quartersnearmesectioncomponent .map {
-    border: solid 1px blueviolet;
-    width: 1251px;
+    border: solid 2px rgb(85, 82, 82);
+    width: 93%;
     height: 360px;
     margin-left: 40px;
-    margin-right: 40px;
+
+
 }
 
 .quartersnearmesectioncomponent .title a {
@@ -41,7 +43,7 @@
     height: 20px;
     line-height: 20px;
     margin-top: 17px;
-
+    margin-right: 40px;
 }
 
 .quartersnearmesectioncomponent .list {

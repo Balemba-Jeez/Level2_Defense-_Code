@@ -28,30 +28,89 @@ class FooterComponent extends Component {
 
                     <div className='footerright'>
                         <table>
+
+
                             <tr>
-                                <td>Add your gas business</td>
-                                <td>View all regions</td>
+
+                                <td><a href="">Get Help</a></td>
+                                <td><a href="">Gas Stores near me</a></td>
+                            </tr>
+
+                            <tr>
+
+                                <td><a href=""></a>Promotions</td>
+                                <td><a href="">Sign up to deliver</a></td>
+                            </tr>
+
+                            <tr>
+
+                                <td><a href=""></a></td>
+                                <td><a href="">Add your gas business</a></td>
+                            </tr>
+
+                            <tr>
+
+                                <td><a href=""></a></td>
+                                <td><a href="">View all quarters</a></td>
+                            </tr>
+                            <tr>
+
+                                <td><a href=""></a></td>
+                                <td><a href="">View all regions</a></td>
 
                             </tr>
                             <tr>
 
-                                <td>Sign up to deliver</td>
-                                <td>View all quarters</td>
-                            </tr>
-                            <tr>
-                                <td>Promotions</td>
-                                <td>About Gas Space</td>
+                                <td><a href=""></a></td>
+                                <td><a href="">About Gas Space</a></td>
                             </tr>
 
                             <tr>
-                                <td colSpan={"2"}>
-                                    <img src="" alt="Translate icon" />
-                                    <p>English</p>
+                                <td></td>
+                                <td>
+                                    <a href=""><img src="languageicon.png" alt="Translate icon" /></a>
+                                    <a href=""><p>English</p></a>
                                 </td>
                             </tr>
 
                         </table>
                     </div>
+                </div>
+
+                <div className='footerbottom'>
+                    <div className='footerbottombegin'>
+                        <div className='bottomleft'>
+                            <a href="">
+                                <img src="facebooklogo.png" alt="Facebook logo" />
+
+                            </a>
+
+                            <a href="">
+                                <img src="facebooklogo.png" alt="Facebook logo" />
+                            </a>
+
+                            <a href="">
+                                <img src="facebooklogo.png" alt="Facebook logo" />
+                            </a>
+
+                        </div>
+
+                        <div className='bottomright'>
+                            <a href="">Privacy Policy</a>
+                            <a href="">Terms</a>
+                            <a href="">Pricing</a>
+                            <a href="">Do not sell or share my personal information</a>
+                        </div>
+                    </div>
+                    <div className='footerbottomend'>
+                        <p>&copy; 2024 gas Space Ltd </p>
+
+                        <p>This site is protected by reCAPTCHA and the
+                            Google <a href="">Privacy Policy </a> and
+                            <a href="">Terms of Service</a> apply
+                        </p>
+                    </div>
+
                 </div>
 
             </div>
