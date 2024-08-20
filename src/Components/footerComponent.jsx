@@ -38,7 +38,7 @@ class FooterComponent extends Component {
 
                             <tr>
 
-                                <td><a href=""></a>Promotions</td>
+                                <td><a href="">Promotions</a></td>
                                 <td><a href="">Sign up to deliver</a></td>
                             </tr>
 
@@ -86,11 +86,11 @@ class FooterComponent extends Component {
                             </a>
 
                             <a href="">
-                                <img src="facebooklogo.png" alt="Facebook logo" />
+                                <img src="twitterlogo.png" alt="Facebook logo" />
                             </a>
 
                             <a href="">
-                                <img src="facebooklogo.png" alt="Facebook logo" />
+                                <img src="instagramlogo.png" alt="Facebook logo" />
                             </a>
 
                         </div>
@@ -107,7 +107,7 @@ class FooterComponent extends Component {
 
                         <p>This site is protected by reCAPTCHA and the
                             Google <a href="">Privacy Policy </a> and
-                            <a href="">Terms of Service</a> apply
+                            <a href=""> Terms of Service</a> apply
                         </p>
                     </div>
 

@@ -1,0 +1,12 @@
+.merchantnavbar {
+    border: ;
+    display: flex;
+    flex-direction: row;
+    /*gap: 0px 846.521px;*/
+    justify-content: space-between;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: black;
+}

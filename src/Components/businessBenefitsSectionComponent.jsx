@@ -8,21 +8,21 @@ class BusinessBenefitsSectionComponent extends Component {
         return (
             <div className='businessbenefitssectioncomponent'>
                 <a href="">
-                    <img src="keeponcooking3.jpeg" alt="Keep your home cooking img" />
+                    <img src="keeponcooking2.jpeg" alt="Keep your home cooking img" />
                     <p className='text'>Keep your home cooking</p>
                     <p className='link'>Enter your address to begin</p>
                 </a>
 
-                <a href="">
-                    <img src="keeponcooking3.jpeg" alt="Keep your home cooking img" />
-                    <p className='text'>Keep your home cooking</p>
-                    <p className='link'>Enter your address to begin</p>
+                <a href="/merchant">
+                    <img src="gasstore1.jpeg" alt="Keep your home cooking img" />
+                    <p className='text'>Your bottles, delivered to homes</p>
+                    <p className='link'>Add your store</p>
                 </a>
 
                 <a href="">
-                    <img src="keeponcooking3.jpeg" alt="Keep your home cooking img" />
-                    <p className='text'>Keep your home cooking</p>
-                    <p className='link'>Enter your address to begin</p>
+                    <img src="deliveryman1.jpeg" alt="Keep your home cooking img" />
+                    <p className='text'>Join our delivery network</p>
+                    <p className='link'>Sign up to deliver</p>
                 </a>
             </div>
         );

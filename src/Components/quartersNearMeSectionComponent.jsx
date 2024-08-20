@@ -18,46 +18,46 @@ class QuartersNearMeSectionComponent extends Component {
                 <div className='list'>
                     <table>
                         <tr>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
+                            <td>Bastos</td>
+                            <td>Essos</td>
+                            <td>Messasi </td>
+                            <td>Omnisport</td>
                         </tr>
                         <tr>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
+                            <td>Nlongkak</td>
+                            <td>Djoungolo</td>
+                            <td>Nsimalen</td>
+                            <td>Yaoundé 6</td>
                         </tr>
                         <tr>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
+                            <td>Biyem-Assi</td>
+                            <td>Etoa-Meki</td>
+                            <td>Elig-Essono</td>
+                            <td>Nkolbisson</td>
                         </tr>
                         <tr>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
+                            <td>Nkolondom </td>
+                            <td>Mvan</td>
+                            <td>Minfac</td>
+                            <td>Ngousso</td>
                         </tr>
                         <tr>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
+                            <td>Soa </td>
+                            <td>Ngolé</td>
+                            <td>Titi Garage</td>
+                            <td>Mbankomo</td>
                         </tr>
                         <tr>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
+                            <td>Emana</td>
+                            <td>Biyemassi</td>
+                            <td>Tsinga</td>
+                            <td>Awae</td>
                         </tr>
                         <tr>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
-                            <td>Tongolo</td>
+                            <td>Etoudi</td>
+                            <td>Obili</td>
+                            <td>Damas</td>
+                            <td>Cité Verte</td>
                         </tr>
                     </table>
                 </div>
