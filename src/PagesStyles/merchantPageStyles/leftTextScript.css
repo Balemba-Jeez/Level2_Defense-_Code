@@ -1,0 +1,30 @@
+.lefttextscript {
+    border: solid green;
+    width: 444px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.lefttextscript h1 {
+    border: ;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 54px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -3px;
+    word-spacing: -1px;
+}
+
+.lefttextscript p {
+    border: ;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0;
+}

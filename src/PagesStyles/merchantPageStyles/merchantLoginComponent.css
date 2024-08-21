@@ -33,7 +33,7 @@
     color: white;
     transition-property: background-color, border-radius;
     transition-duration: 300ms;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
 }
 
 .merchantlogincomponent a:hover {

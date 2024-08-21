@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../../PagesStyles/merchantPageStyles/merchantWelcomePage.css';
 import MerchantNavBar from './merchantNavBar';
+import MerchantSignUpSectionComponent from './merchantSignUPSectionComponent';
 
 class MerchantWelcomePage extends Component {
     state = {}
@@ -8,6 +9,7 @@ class MerchantWelcomePage extends Component {
         return (
             <div className='merchantwelcomepage'>
                 <MerchantNavBar />
+                <MerchantSignUpSectionComponent />
             </div>
         );
     }

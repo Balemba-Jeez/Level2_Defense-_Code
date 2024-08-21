@@ -1,0 +1,302 @@
+.rightmerchantsignupection {
+    border: solid green;
+    display: inline-block;
+    padding: 48px
+}
+
+.rightmerchantsignupection form {
+    border: ;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 453.667px;
+}
+
+.rightmerchantsignupection form .bbox {
+    border: ;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+
+.rightmerchantsignupection form .bbox .box {
+    border: ;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.rightmerchantsignupection form .bbox .box .box1 {
+    border: ;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.rightmerchantsignupection form .bbox .box .box1 h2 {
+    border: ;
+    margin: 0;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.rightmerchantsignupection form .bbox .box .box1 p {
+    border: ;
+    margin: 0;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.rightmerchantsignupection form .bbox .box .box1 p a {
+    border: ;
+    color: black;
+    font-size: inherit;
+    font-weight: 500;
+}
+
+.rightmerchantsignupection form .bbox .box .box2 {
+    border: ;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.rightmerchantsignupection form .bbox .box .box2 .box2item1 {
+    border: ;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.rightmerchantsignupection form .bbox .box .box2 .box2item1 span {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+}
+
+.rightmerchantsignupection form .bbox .box .box2 .box2item1 span label {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.rightmerchantsignupection form input {
+    padding-top: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+    border: solid 2px #f3f3f3;
+    background-color: #f3f3f3;
+    outline: none;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 16px;
+    transition-property: background-color, border;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.2, 0.8, 0.4, 1);
+}
+
+.rightmerchantsignupection form input:focus {
+    border: solid 2px black;
+    background-color: white;
+    outline: none;
+}
+
+
+.rightmerchantsignupection form .bbox .bbox0 {
+    border: ;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.rightmerchantsignupection form .bbox .bbox0 .box2item1 {
+    border: ;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rightmerchantsignupection form .bbox .bbox0 .box2item1 span {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+}
+
+.rightmerchantsignupection form .bbox .bbox0 .box2item1 span label {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.rightmerchantsignupection form .bbox .bbox0 .box2item1 div:nth-child(1) {
+    border: ;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rightmerchantsignupection form .bbox .bbox0 .box2item1 div:nth-child(2) {
+    border: ;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rightmerchantsignupection form .bbox .bbox0 .box2item1:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 8px;
+}
+
+
+
+.rightmerchantsignupection form .bbox .bbox0 .box2item1 span {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+}
+
+.rightmerchantsignupection form .bbox .bbox0 .box2item1 span label {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.rightmerchantsignupection form .bbox .bbox0 .box2item1:nth-child(3) div:nth-child(1) {
+    border: ;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rightmerchantsignupection form .bbox .bbox0 .box2item1:nth-child(3) div:nth-child(1) select {
+    border: solid 2px #f3f3f3;
+    background-color: #f3f3f3;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    border-radius: 7px;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    transition-property: background-color, border;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.2, 0.8, 0.4, 1);
+    cursor: pointer;
+}
+
+.rightmerchantsignupection form .bbox .bbox0 .box2item1:nth-child(3) div:nth-child(1) select:focus {
+    border: solid 2px black;
+    background-color: white;
+    outline: none;
+}
+
+.rightmerchantsignupection form .bbox .bbox0 .box2item1:nth-child(3) div:nth-child(1) span {
+    width: 139.517px;
+}
+
+.rightmerchantsignupection form .bbox .bbox0 .box2item1:nth-child(3) div:nth-child(1) select option {
+    background-color: white;
+}
+
+.rightmerchantsignupection form .bbox .bbox0 .box2item1:nth-child(3) div:nth-child(2) {
+    border: ;
+    display: grid;
+    align-content: end;
+    width: 100%;
+}
+
+
+.rightmerchantsignupection form .bbox .bbox0 .box2item1:nth-child(3) {
+    border: ;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 8px;
+}
+
+
+.rightmerchantsignupection form .bbox0 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.rightmerchantsignupection form .bbox0 p {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: rgb(94, 94, 94);
+    margin: 0;
+    line-height: 18px;
+    letter-spacing: 0px;
+}
+
+.rightmerchantsignupection form .bbox0 p a {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: 500;
+
+}
+
+.rightmerchantsignupection form .bbox0 p a:hover {
+    color: rgb(94, 94, 94);
+    cursor: pointer;
+}
+
+
+.rightmerchantsignupection form .bbox0 button {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 550;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition-property: background-color, border-radius;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+.rightmerchantsignupection form .bbox0 button:hover {
+    background-color: #282828;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+}
