@@ -67,6 +67,26 @@ class RightMerchantSignUpSection extends Component {
             errors.merchanttelnum = "Enter phone number";
         }
 
+
+        // Validate phone number based on network type
+        const { merchanttelnum, telnumtypes } = this.state;
+        if (!merchanttelnum) {
+            errors.merchanttelnum = "Enter phone number";
+        } else {
+            let valid = false;
+            if (telnumtypes === "MTN") {
+                valid = /^(67|65|66|68)\d{7}$/.test(merchanttelnum);
+                if (!valid) errors.merchanttelnum = "Looks like that MTN number isn't valid. Please try again.";
+            } else if (telnumtypes === "Orange") {
+                valid = /^(69|650|651|652|653)\d{7}$/.test(merchanttelnum);
+                if (!valid) errors.merchanttelnum = "Looks like that Orange number isn't valid. Please try again.";
+            } else if (telnumtypes === "Camtel") {
+                valid = /^62\d{7}$/.test(merchanttelnum);
+                if (!valid) errors.merchanttelnum = "Looks like that Camtel number isn't valid. Please try again.";
+            }
+        }
+
+
         this.setState({ errors });
         return Object.keys(errors).length === 0; //Returns validation status ('true' if there are no errors).
     }
