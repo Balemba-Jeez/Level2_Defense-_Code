@@ -83,6 +83,19 @@
     font-weight: normal;
 }
 
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+.regular-text {
+    font-size: 14px;
+}
+
+.rightmerchantsignupection form .input-error {
+    border-color: red;
+}
+
 .rightmerchantsignupection form .bbox .box .box2 .box2item1 span {
     font-family: Arial,
         Helvetica,
@@ -232,6 +245,7 @@
     display: grid;
     align-content: end;
     width: 100%;
+    padding-top: 26px;
 }
 
 

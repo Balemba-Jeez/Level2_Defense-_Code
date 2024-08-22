@@ -33,7 +33,7 @@ class RightMerchantSignUpSection extends Component {
         this.setState({
             [event.target.name]: event.target.value
         });
-        console.log(event.target.value);
+        //console.log(event.target.value);
     }
 
     //Validation Function(Validate each field and update the 'errors' state)
@@ -41,30 +41,30 @@ class RightMerchantSignUpSection extends Component {
         let errors = {};
 
         if (!this.state.storemapaddress) {
-            errors.storemapaddress = "store address is required"; //Update 'errors' state with the error messages so that form can display them.
+            errors.storemapaddress = "Enter a valid store address"; //Update 'errors' state with the error messages so that form can display them.
 
         }
 
         if (!this.state.storename) {
-            errors.storename = "Store is required";
+            errors.storename = "Enter a store name";
         }
 
         if (!this.state.merchanfirstname) {
-            errors.merchantfirstname = "First name is required";
+            errors.merchantfirstname = "Enter first name";
         }
 
         if (!this.state.merchantlastname) {
-            errors.merchantlastname = "Last name is required";
+            errors.merchantlastname = "Enter last name";
         }
 
         if (!this.state.merchantemail) {
-            errors.merchantemail = "Email is required";
+            errors.merchantemail = "Enter email address";
         } else if (!/\S+@\S+\.\S+/.test(this.state.merchantemail)) {
-            errors.merchantemail = "Email address is invalid";
+            errors.merchantemail = "Enter a valid email address";
         }
 
         if (!this.state.merchanttelnum) {
-            errors.merchanttelnum = "Mobile phone number is required";
+            errors.merchanttelnum = "Enter phone number";
         }
 
         this.setState({ errors });
@@ -81,13 +81,16 @@ class RightMerchantSignUpSection extends Component {
         if (!isValid) {
             return; //Exits Function if form is invalid or validation errors exists
         }
+
+        // Proceed with form submission or further processing
     }
 
+    //Update Input Fields with Error States
 
     render() {
         return (
             <div className='rightmerchantsignupection'>
-                <form action="">
+                <form action="" onSubmit={this.handleSubmit}>
                     <div className='bbox'>
 
                         <div className='box'>
@@ -98,32 +101,45 @@ class RightMerchantSignUpSection extends Component {
                                 </p>
                             </div>
                             <div className='box2'>
+                                {/* Store Address */}
                                 <div className='box2item1'>
                                     <span><label htmlFor="storemapaddress">Store address</label></span>
 
                                     <input type="text" name="storemapaddress" id="storemapaddress"
                                         placeholder="Enter your store location (e.g., Carrefour Bastos, Yaoundé)"
                                         value={this.state.storemapaddress}
-                                        onChange={this.handleInputChange}
+                                        onChange={this.handleInputChange} //Get Input Value using the event object
+                                        className={this.state.errors.storemapaddress ? 'input-error' : ''}
                                     />
+                                    {this.state.errors.storemapaddress && (
+                                        <span className="error-message">{this.state.errors.storemapaddress}</span>
+                                    )}
                                 </div>
 
+                                {/* Building / Apartment (Optional) */}
                                 <div className='box2item1'>
                                     <span><label htmlFor="storefloorsuite">Building / Apartment (Optional)</label></span>
                                     <input type="text" name="storefloorsuite" id="storefloorsuite" placeholder=''
                                         value={this.state.storefloorsuite}
-                                        onChange={this.handleInputChange}
+                                        onChange={''}
                                     />
-
                                 </div>
 
+                                {/* Store Name */}
                                 <div className='box2item1'>
                                     <span><label htmlFor="storename">Store name</label></span>
                                     <input type="text" name="storename" id="storename" placeholder="Example: Rapid Gaz - Essos Market"
                                         value={this.state.storename}
                                         onChange={this.handleInputChange}
+                                        className={this.state.errors.storemapaddress ? 'input-error' : ''}
                                     />
-                                    This is how your store will appear in the app
+
+                                    {this.state.errors.storename ? (
+                                        <span className="error-message">{this.state.errors.storename}</span>
+                                    ) : (
+                                        <span className="regular-text">This is how your store will appear in the app</span>
+                                    )}
+
                                 </div>
 
 
@@ -134,6 +150,7 @@ class RightMerchantSignUpSection extends Component {
 
                         <div className='bbox0'>
 
+                            {/* First and Last Name */}
                             <div className='box2item1'>
 
                                 <div>
@@ -141,7 +158,12 @@ class RightMerchantSignUpSection extends Component {
                                     <input type="text" name="merchantfirstname" id="merchantfirstname" placeholder=''
                                         value={this.state.merchanfirstname}
                                         onChange={this.handleInputChange}
+                                        className={this.state.errors.merchantfirstname ? 'input-error' : ''}
                                     />
+
+                                    {this.state.errors.merchantfirstname && (
+                                        <span className="error-message">{this.state.errors.merchantfirstname}</span>
+                                    )}
                                 </div>
 
                                 <div>
@@ -149,19 +171,31 @@ class RightMerchantSignUpSection extends Component {
                                     <input type="text" name="merchantlastname" id="merchantlastname" placeholder=''
                                         value={this.state.merchantlastname}
                                         onChange={this.handleInputChange}
+                                        className={this.state.errors.merchantlastname ? 'input-error' : ''}
                                     />
+
+                                    {this.state.errors.merchantlastname && (
+                                        <span className="error-message">{this.state.errors.merchantlastname}</span>
+                                    )}
                                 </div>
 
                             </div>
 
+                            {/* Email */}
                             <div className='box2item1'>
                                 <span><label htmlFor="merchantemail">Email</label></span>
                                 <input type="text" name="merchantemail" id="merchantemail" placeholder=''
                                     value={this.state.merchantemail}
                                     onChange={this.handleInputChange}
+                                    className={this.state.errors.merchantemail ? 'input-error' : ''}
                                 />
+
+                                {this.state.errors.merchantemail && (
+                                    <span className="error-message">{this.state.errors.merchantemail}</span>
+                                )}
                             </div>
 
+                            {/* Mobile phone number */}
                             <div className='box2item1'>
 
                                 <div>
@@ -180,7 +214,12 @@ class RightMerchantSignUpSection extends Component {
                                     <input type="text" name="merchanttelnum" id="merchanttelnum" placeholder=""
                                         value={this.state.merchanttelnum}
                                         onChange={this.handleInputChange}
+                                        className={this.state.errors.merchanttelnum ? 'input-error' : ''}
                                     />
+
+                                    {this.state.errors.merchanttelnum && (
+                                        <span className="error-message">{this.state.errors.merchanttelnum}</span>
+                                    )}
                                 </div>
 
                             </div>
@@ -190,10 +229,11 @@ class RightMerchantSignUpSection extends Component {
 
                     </div>
 
+                    {/* Submit Section */}
                     <div className='bbox0'>
                         <p>By clicking "Submit", you agree to <a href="">Gas Space Merchant Terms and Conditions </a> and <br /> acknowledge you have read the <a href="">Privacy Notice</a></p>
 
-                        <button type="button">Submit</button>
+                        <button type="submit">Submit</button>
                     </div>
 
 
