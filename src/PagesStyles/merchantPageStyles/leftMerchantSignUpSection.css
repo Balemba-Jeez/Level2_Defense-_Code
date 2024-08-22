@@ -1,3 +1,6 @@
 .leftmerchantsignupsection {
-    border: solid;
+    border: ;
+    display: grid;
+    align-content: center;
+
 }

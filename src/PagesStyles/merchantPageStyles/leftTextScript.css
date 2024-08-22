@@ -1,9 +1,10 @@
 .lefttextscript {
-    border: solid green;
+    border: ;
     width: 444px;
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin-top: 400px;
 }
 
 .lefttextscript h1 {

@@ -2,4 +2,9 @@
     border: solid red;
     display: flex;
     flex-direction: row;
+    justify-content: end;
+    gap: 0px 100.996px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 64px;
 }
