@@ -1,0 +1,10 @@
+.merchantsubappheaderleftitem {
+    border: solid;
+    width: 178px;
+    height: 41px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: ;
+    padding-right: 21px;
+    margin-top: 4px;
+}

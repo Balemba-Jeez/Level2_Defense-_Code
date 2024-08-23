@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import '../../PagesStyles/merchantPageStyles/merchantWPHeaderRightItem.css';
 
 class MerchantWPHeaderRightItem extends Component {
-    state = {}
+    state = {
+    }
+
     render() {
+
         return (
             <div className='merchantwpheaderightitem'>
                 <div>

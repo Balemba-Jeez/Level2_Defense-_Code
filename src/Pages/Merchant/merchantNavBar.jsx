@@ -4,7 +4,8 @@ import MerchantWPHeaderRightItem from '../Merchant/merchantWPHeaderRighItem';
 import MerchantWPHeaderLeftItem from '../Merchant/merchantWPHeaderLeftItem';
 
 class MerchantNavBar extends Component {
-    state = {}
+    state = {
+    }
     render() {
         return (
             <div className='merchantnavbar'>
