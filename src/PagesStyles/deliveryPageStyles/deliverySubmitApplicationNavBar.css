@@ -1,0 +1,12 @@
+.deliverysubmitapplicationnavbar {
+    border: solid;
+    display: flex;
+    flex-direction: row;
+    /*gap: 0px 846.521px;*/
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: black;
+}

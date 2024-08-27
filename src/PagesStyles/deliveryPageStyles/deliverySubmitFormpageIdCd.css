@@ -1,0 +1,222 @@
+.deliverysubmitformpageidcd {
+    border: solid 1px #E2E2E2;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 395px;
+    margin-top: 34px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    width: 620.667px;
+    margin-bottom: 34px;
+}
+
+
+.deliverysubmitformpageidcd .deliverysubmitformppageheaderidcd {
+    border: none;
+    background-color: black;
+    height: ;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+.deliverysubmitformpageidcd .deliverysubmitformppageheaderidcd .deliverysubmitformppageheaderidcdleft {
+    border: ;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 0px 14px;
+
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppageheaderidcd .deliverysubmitformppageheaderidcdleft button img {
+    border: none;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppageheaderidcd .deliverysubmitformppageheaderidcdleft button {
+    border: none;
+    background-color: black;
+    cursor: pointer;
+    padding: 10px;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    transition-duration: 200ms;
+    border-radius: 50%;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppageheaderidcd .deliverysubmitformppageheaderidcdleft button:hover {
+    background-color: #333333;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdtext {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdtext h3 {
+    border: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdtext p {
+    border: ;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgb(50, 49, 49);
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdlist {
+    border: none;
+
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdlist ol {
+    margin-top: 0px;
+    padding-left: 16px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: #6a6a6a;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdlist ol li {
+    height: 22px;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdinput {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdinput .deliverysubmitformpageidcdinputimage {
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdinput .deliverysubmitformpageidcdinputimage img {
+    border: none;
+    width: 329.198px;
+    height: 329.198px;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdinput .deliverysubmitformpageidcdinputbutton {
+    border: none;
+    background-color: rgb(243, 243, 243);
+    display: inline-block;
+    border-radius: 8px;
+    transition-duration: 200ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 130px;
+    width: 299.198px;
+    height: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdinput .deliverysubmitformpageidcdinputbutton:hover {
+    background-color: rgb(221, 221, 221);
+    cursor: pointer;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdinput .deliverysubmitformpageidcdinputbutton .firstchild {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdinput .deliverysubmitformpageidcdinputbutton .firstchild label {
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 5px;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdinput .deliverysubmitformpageidcdinputbutton .firstchild label span {
+    border: none;
+    word-spacing: 0px;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdinput .deliverysubmitformpageidcdinputbutton .firstchild label img {
+    border: none;
+    width: 18px;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdinput .deliverysubmitformpageidcdinputbutton .firstchild input[type=file] {
+    border: ;
+    display: none;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagefooteridcd {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    background-color: rgb(221, 221, 221);
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagefooteridcd button {
+    border: solid pink;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition-property: background-color, border-radius;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagefooteridcd button:hover {
+    background-color: #282828;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+}

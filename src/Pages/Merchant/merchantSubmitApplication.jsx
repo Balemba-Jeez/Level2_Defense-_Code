@@ -19,11 +19,25 @@ class MerchantSubmitApplication extends Component {
 
                     <div className='merchantsubmitapplicationoption'>
 
-                        <a href="">
+                        <a href="/merchant/submitapplication/merchantphoto">
                             <div className='merchantsubmitapplicationoptiontype'>
 
                                 <div className='merchantsubmitapplicationoptiontypeleft'>
-                                    <p>Business License</p>
+                                    <p>Merchant photo</p>
+                                    <p>Recommended step</p>
+                                </div>
+
+                                <img src={require('../../fast-forwardicon.png')} alt="Arrow" />
+
+                            </div>
+                        </a>
+
+
+                        <a href="/merchant/submitapplication/Business license">
+                            <div className='merchantsubmitapplicationoptiontype'>
+
+                                <div className='merchantsubmitapplicationoptiontypeleft'>
+                                    <p>Business license</p>
                                     <p>Recommended step</p>
                                 </div>
 
