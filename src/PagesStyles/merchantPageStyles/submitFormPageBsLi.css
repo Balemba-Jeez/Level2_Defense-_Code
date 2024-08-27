@@ -104,10 +104,18 @@
     margin-bottom: 0px;
     font-size: 14px;
     color: #6a6a6a;
+    list-style-type: square;
 }
 
 .submitformppagebsli .submitformppagebslibody .Submitformpagebslilist ol li {
     height: 22px;
+
+}
+
+.submitformppagebsli .submitformppagebslibody .Submitformpagebslilist ol li span {
+    font-weight: 700;
+    color: black;
+
 }
 
 .submitformppagebsli .submitformppagebslibody .Submitformpagebsliinput {

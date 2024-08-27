@@ -22,18 +22,18 @@ class SubmitFormPageBsLi extends Component {
                 <div className='submitformppagebslibody'>
 
                     <div className='Submitformpagebslitext'>
-                        <h3>Take your profile photo</h3>
+                        <h3>Take a photo of your Business license</h3>
                         <div>
-                            <p>Your profile photo helps people recognize you. Please note that once you submit <br /> your profile photo it cannot be changed.</p>
+                            <p>Photograph all sides of your business license. Ensure that all important details, including <br /> any identification numbers, are clearly visible in the images</p>
                         </div>
                     </div>
 
                     <div className='Submitformpagebslilist'>
                         <ol>
-                            <li>Select a clear and recent photo of yourself from your phone</li>
-                            <li>photos with filters, alterations, or pictures of another photo</li>
+                            <li>Make sure that document is <span>not expired</span>  and your upload a <span>clear picture</span></li>
+                            {/*<li>photos with filters, alterations, or pictures of another photo</li>
                             <li>Ensure your face is directly visible, with your eyes and mouth unobstructed</li>
-                            <li>Make sure the photo is well-lit, without glare, shadows, or blur, and shows your face clearly</li>
+                            <li>Make sure the photo is well-lit, without glare, shadows, or blur, and shows your face clearly</li>*/}
 
                         </ol>
                     </div>
@@ -41,7 +41,7 @@ class SubmitFormPageBsLi extends Component {
                     <div className='Submitformpagebsliinput'>
                         <div className='Submitformpagebsliinputimage'>
 
-                            <img src={require('../../profile_photo_global.png')} alt="Image Demonstration" />
+                            <img src={require('../../businesslicense.jpeg')} alt="Image Demonstration" />
 
                         </div>
 

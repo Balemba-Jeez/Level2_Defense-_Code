@@ -22,18 +22,18 @@ class DeliverySubmitFormPageIdCd extends Component {
                 <div className='deliverysubmitformppagebodyidcd'>
 
                     <div className='deliverysubmitformpageidcdtext'>
-                        <h3>Take your profile photo</h3>
+                        <h3>Take a photo of your National ID Card</h3>
                         <div>
-                            <p>Your profile photo helps people recognize you. Please note that once you submit <br /> your profile photo it cannot be changed.</p>
+                            <p>Photograph both sides of your ID card. Ensure that all important details, including your CNI number, are clearly visible in the images</p>
                         </div>
                     </div>
 
                     <div className='deliverysubmitformpageidcdlist'>
                         <ol>
-                            <li>Select a clear and recent photo of yourself from your phone</li>
-                            <li>Avoid photos with filters, alterations, or pictures of another photo</li>
-                            <li>Ensure your face is directly visible, with your eyes and mouth unobstructed</li>
-                            <li>Make sure the photo is well-lit, without glare, shadows, or blur, and shows your face clearly</li>
+                            <li>Make sure that document is <span>not expired</span> and your upload a <span>clear picture</span></li>
+                            <li><span>MAKE SURE</span> that the <span>CNI number</span> of your document is <span>clear visible</span></li>
+                            <li><span>DO NOT</span> upload irrelevant images (blank photos, selfies, or random pictures) – <span>Doing so will delay your account activation </span></li>
+                            <li><span>MAKE SURE</span> the <span>photo</span> on your document shows your face clearly and visible</li>
 
                         </ol>
                     </div>
@@ -41,7 +41,7 @@ class DeliverySubmitFormPageIdCd extends Component {
                     <div className='deliverysubmitformpageidcdinput'>
                         <div className='deliverysubmitformpageidcdinputimage'>
 
-                            <img src={require('../../profile_photo_global.png')} alt="Image Demonstration" />
+                            <img src={require('../../IDCardphoto.png')} alt="Image Demonstration" />
 
                         </div>
 

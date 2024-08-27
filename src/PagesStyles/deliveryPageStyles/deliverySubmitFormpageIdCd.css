@@ -106,7 +106,52 @@
 }
 
 .deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdlist ol li {
-    height: 22px;
+    height: 33px;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdlist ol li:nth-child(1) span {
+    font-weight: 700;
+    color: black;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdlist ol li:nth-child(2) span:nth-child(1) {
+    font-weight: 700;
+    color: red;
+    text-decoration: none;
+    word-spacing: -2px;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdlist ol li:nth-child(2) span:nth-child(2) {
+    font-weight: 700;
+    color: black;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdlist ol li:nth-child(3) span:nth-child(1) {
+    font-weight: 700;
+    color: red;
+    text-decoration: none;
+    word-spacing: -2px;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdlist ol li:nth-child(3) span:nth-child(2) {
+    font-weight: 700;
+    color: black;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdlist ol li:nth-child(3) {
+    padding-bottom: 16px;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdlist ol li:nth-child(4) span:nth-child(1) {
+    font-weight: 700;
+    color: red;
+    text-decoration: none;
+    word-spacing: -2px;
+}
+
+.deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdlist ol li:nth-child(4) span:nth-child(2) {
+    font-weight: 700;
+    color: black;
 }
 
 .deliverysubmitformpageidcd .deliverysubmitformppagebodyidcd .deliverysubmitformpageidcdinput {

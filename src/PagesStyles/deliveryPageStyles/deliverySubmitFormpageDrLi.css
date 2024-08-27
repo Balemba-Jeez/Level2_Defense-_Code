@@ -106,7 +106,24 @@
 }
 
 .deliverysubmitformpagedrli .deliverysubmitformppagebodydrli .deliverysubmitformpagedrlilist ol li {
-    height: 22px;
+    height: 33px;
+}
+
+.deliverysubmitformpagedrli .deliverysubmitformppagebodydrli .deliverysubmitformpagedrlilist ol li:nth-child(1) span {
+    font-weight: 700;
+    color: black;
+}
+
+.deliverysubmitformpagedrli .deliverysubmitformppagebodydrli .deliverysubmitformpagedrlilist ol li:nth-child(2) span:nth-child(2) {
+    font-weight: 700;
+    color: black;
+}
+
+.deliverysubmitformpagedrli .deliverysubmitformppagebodydrli .deliverysubmitformpagedrlilist ol li:nth-child(2) span:nth-child(1) {
+    font-weight: 700;
+    color: red;
+    text-decoration: none;
+    word-spacing: -2px;
 }
 
 .deliverysubmitformpagedrli .deliverysubmitformppagebodydrli .deliverysubmitformpagedrliinput {
@@ -126,7 +143,7 @@
 .deliverysubmitformpagedrli .deliverysubmitformppagebodydrli .deliverysubmitformpagedrliinput .deliverysubmitformpagedrliinputimage img {
     border: none;
     width: 329.198px;
-    height: 329.198px;
+    height: 265.198px;
 }
 
 .deliverysubmitformpagedrli .deliverysubmitformppagebodydrli .deliverysubmitformpagedrliinput .deliverysubmitformpagedrliinputbutton {
