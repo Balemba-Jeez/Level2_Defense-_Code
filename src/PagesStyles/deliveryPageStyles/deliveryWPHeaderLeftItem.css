@@ -1,0 +1,8 @@
+.deliverypersonwpheaderleftitem {
+    border: ;
+    width: 178px;
+    height: 41px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 8px;
+}

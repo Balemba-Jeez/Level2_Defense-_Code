@@ -1,0 +1,15 @@
+.deliverypersonsignupsectioncomponent {
+    border-top: solid 64px white;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 0px 100.996px;
+    padding-left: 64px;
+    padding-right: 64px;
+    /*padding-bottom: 64px;
+    padding-top: 64px;*/
+    padding-bottom: 96px;
+    padding-top: 96px;
+    background-color: #000000;
+    color: #FFFFFF;
+}

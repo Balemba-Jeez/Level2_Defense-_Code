@@ -13,6 +13,7 @@ import DeliverySubmitFormPageVeRC from './Pages/Delivery/deliverySubmitFormPageV
 import DeliverySubmitFormPageIns  from './Pages/Delivery/deliverySubmitFormPageIns.jsx';
 import DeliverySubmitFormPageViTech from './Pages/Delivery/deliverySubmitFormPageViTech.jsx';
 import DeliverySubmitFormPageIdCd from './Pages/Delivery/deliverySubmitFormPageIdCd.jsx';
+import DeliveryPersonWelcomePage from './Pages/Delivery/deliveryPersonWelcomePage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
     path: '/merchant/submitapplication/Business license',
     element: <SubmitFormPageBsLi />
     },
+  {
+    path: '/delivery',
+    element: <DeliveryPersonWelcomePage />
+  },
   {
     path: '/delivery/submitapplication',
     element: <DeliverySubmitApplication />

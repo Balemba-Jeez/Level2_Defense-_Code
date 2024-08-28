@@ -1,0 +1,43 @@
+.deliverytranslatecomponent {
+    border: ;
+    width: 70px;
+    height: 35px;
+
+}
+
+.deliverytranslatecomponent button img {
+    width: 14px;
+    height: 14px;
+}
+
+.deliverytranslatecomponent button p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 550;
+    margin-top: -2px;
+    margin-bottom: 0px;
+}
+
+.deliverytranslatecomponent button {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 8px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 14px;
+    padding-left: 14px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition-property: background-color, border-radius;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+.deliverytranslatecomponent button:hover {
+    background-color: #282828;
+    cursor: pointer;
+    border-radius: 30px;
+}

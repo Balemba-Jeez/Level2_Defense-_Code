@@ -1,0 +1,102 @@
+.leftdeliverypersontextscript {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+
+.leftdeliverypersontextscript .leftdeliverypersontextscriptchild1 {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 0;
+
+
+}
+
+.leftdeliverypersontextscript .leftdeliverypersontextscriptchild1 h1 {
+    border: ;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 54px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -3px;
+    word-spacing: -1px;
+    line-height: 64px;
+    color: #FFFFFF;
+}
+
+.leftdeliverypersontextscript .leftdeliverypersontextscriptchild1 p {
+    border: ;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0;
+}
+
+.leftdeliverypersontextscript .leftdeliverypersontextscriptchild2 {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 65px;
+
+}
+
+.leftdeliverypersontextscript .leftdeliverypersontextscriptchild2 a:nth-child(1) {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+    /*line-height: 24px;*/
+    text-decoration: none;
+    background-color: #FFFFFF;
+    color: black;
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    border-radius: 8px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 40px;
+    padding-right: 40px;
+    cursor: pointer;
+    border: none;
+    word-spacing: -1px;
+}
+
+.leftdeliverypersontextscript .leftdeliverypersontextscriptchild2 a:nth-child(1):hover {
+    cursor: pointer;
+    background-color: #EEEEEE;
+}
+
+.leftdeliverypersontextscript .leftdeliverypersontextscriptchild2 a:nth-child(2) {
+    display: inline-block;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-decoration: ;
+    text-decoration-color: ;
+    padding-bottom: 1px;
+    border-bottom: solid 2px white;
+    word-spacing: -2px;
+    cursor: pointer;
+    height: 18px;
+    margin-top: 20px;
+}
+
+leftdeliverypersontextscript .leftdeliverypersontextscriptchild2 a:nth-child(2):hover {
+    cursor: pointer;
+    color: #EEEEEE;
+}
