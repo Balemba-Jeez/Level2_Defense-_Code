@@ -1,0 +1,226 @@
+.merchantbusinesspagefootercomponent {
+    border-top: solid 1px #f3f3f3;
+    width: 100%;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop {
+    border: ;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 255.667px;
+    padding-left: 40px;
+    padding-right: 0;
+    width: 1218px;
+    height: 311.983px;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefootertopleft {
+    border: ;
+    display: flex;
+    flex-direction: column;
+    gap: 200px 0px;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefootertopleft .merchantbusinesspagefooterlogotext {
+    border: ;
+    width: 195.43px;
+    height: 53.533px;
+    display: flex;
+    flex-direction: row;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefootertopleft .merchantbusinesspagefooterlogotext img {
+    border: ;
+    width: 60px;
+    height: 60px;
+    margin-top: -8px;
+    margin-left: -19px;
+}
+
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefootertopleft .merchantbusinesspagefooterlogotext p {
+    border: ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: ;
+    font-size: 180%;
+    letter-spacing: -1px;
+    word-spacing: -2px;
+    width: 134.9px;
+    height: 27.733px;
+    margin-left: -12px;
+    margin-top: 3.8px;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefootertopleft .merchantbusinesspagefooterlogotext p span {
+    border: ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 560;
+    font-size: 100%;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefootertopleft .merchantbusinesspagefooterdownloadbuttons {
+    border: ;
+    height: 48.45px;
+    width: 294px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 15px;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefootertopleft .merchantbusinesspagefooterdownloadbuttons a {
+    cursor: pointer;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefootertopleft .merchantbusinesspagefooterdownloadbuttons a img {
+    width: 135px;
+    height: 40.45px;
+
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefootertopleft .merchantbusinesspagefooterdownloadbuttons a:nth-child(1) img {
+    padding-top: 4px;
+}
+
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefootertopleft .merchantbusinesspagefooterdownloadbuttons a:nth-child(2) img {
+    height: 48.45px;
+    width: 145px;
+}
+
+table {
+    border: ;
+    border-spacing: ;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefooterright {
+    padding-top: 6px;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefooterright table tr td a {
+    text-decoration: none;
+    color: black;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefooterright table tr td a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefooterright table tr {
+    border: ;
+}
+
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefooterright table tr td {
+    border: ;
+    width: 277.833px;
+    height: 24px;
+    padding-top: 0px;
+    padding-bottom: 14px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefooterright table tr:nth-child(7) {
+    margin-top: 27px;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefooterright table tr:nth-child(7) td:nth-child(2) {
+    border: ;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 8px;
+
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefooterright table tr:nth-child(7) td:nth-child(2) p {
+    border: ;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefootertop .merchantbusinesspagefooterright table tr:nth-child(7) td:nth-child(2) img {
+    border: ;
+    width: 16px;
+    height: 16px;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefooterbottom {
+    border-top: #F3F3F3 1px solid;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 40px;
+    width: 1181px;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefooterbottom a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefooterbottom a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefooterbottom .merchantbusinesspagefooterbottombegin {
+    border: ;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 510.365px;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefooterbottom .merchantbusinesspagefooterbottombegin .bottomleft {
+    border: ;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 24px;
+    width: 96;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefooterbottom .merchantbusinesspagefooterbottombegin .bottomleft a img {
+    border: ;
+    width: 16px;
+    height: 16px;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefooterbottom .merchantbusinesspagefooterbottombegin .bottomright {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 40px;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefooterbottom .merchantbusinesspagefooterbottomend {
+    border: ;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0px 40px;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefooterbottom .merchantbusinesspagefooterbottomend p {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefooterbottom .merchantbusinesspagefooterbottomend a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: black;
+    cursor: pointer;
+}
+
+.merchantbusinesspagefootercomponent .merchantbusinesspagefooterbottom .merchantbusinesspagefooterbottomend a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

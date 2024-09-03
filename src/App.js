@@ -14,15 +14,23 @@ import DeliverySubmitFormPageIns  from './Pages/Delivery/deliverySubmitFormPageI
 import DeliverySubmitFormPageViTech from './Pages/Delivery/deliverySubmitFormPageViTech.jsx';
 import DeliverySubmitFormPageIdCd from './Pages/Delivery/deliverySubmitFormPageIdCd.jsx';
 import DeliveryPersonWelcomePage from './Pages/Delivery/deliveryPersonWelcomePage.jsx';
+import ClientHomePage from './Pages/Client/clientHomePage.jsx';
+import MerchantBusinessPage from './Pages/BusinessPages/MerchantBusinessPage/merchantBusinessPage.jsx';
+import MerchantBusinessPageModal from './Pages/BusinessPages/MerchantBusinessPage/merchantBusinessPageModal.jsx';
+import CheckOutPageComponent from './Pages/BusinessPages/checkOutPageComponent.jsx';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/client',
     element: <ClientWelcomPage />
   },
   {
     path: '/merchant',
     element: <MerchantWelcomePage />
+  },
+  {
+    path: '/client/homepage',
+    element: <ClientHomePage />
   },
   {
     path: '/merchant/submitapplication',
@@ -68,6 +76,19 @@ const router = createBrowserRouter([
     path: '/delivery/submitapplication/deliverypersonIDCard',
     element: <DeliverySubmitFormPageIdCd />
     },
+    {
+    path: '/Merchant/BusinessPage',
+    element: <MerchantBusinessPage />
+    },
+    {
+    path: '/Merchant/BusinessPage/modal',
+    element: <MerchantBusinessPageModal />
+    },
+    {
+    path: '/Merchant/BusinessPage/CheckOutPage',
+    element: <CheckOutPageComponent />
+    },
+    
 ]);
 
 function App() {

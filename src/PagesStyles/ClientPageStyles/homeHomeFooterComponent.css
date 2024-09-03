@@ -1,0 +1,226 @@
+.homefootercomponent {
+    border-top: solid 1px #f3f3f3;
+    width: 100%;
+}
+
+.homefootercomponent .homefootertop {
+    border: ;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 255.667px;
+    padding-left: 40px;
+    padding-right: 0;
+    width: 1218px;
+    height: 311.983px;
+}
+
+.homefootercomponent .homefootertop .homefootertopleft {
+    border: ;
+    display: flex;
+    flex-direction: column;
+    gap: 200px 0px;
+}
+
+.homefootercomponent .homefootertop .homefootertopleft .homefooterlogotext {
+    border: ;
+    width: 195.43px;
+    height: 53.533px;
+    display: flex;
+    flex-direction: row;
+}
+
+.homefootercomponent .homefootertop .homefootertopleft .homefooterlogotext img {
+    border: ;
+    width: 60px;
+    height: 60px;
+    margin-top: -8px;
+    margin-left: -19px;
+}
+
+
+.homefootercomponent .homefootertop .homefootertopleft .homefooterlogotext p {
+    border: ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: ;
+    font-size: 180%;
+    letter-spacing: -1px;
+    word-spacing: -2px;
+    width: 134.9px;
+    height: 27.733px;
+    margin-left: -12px;
+    margin-top: 3.8px;
+}
+
+.homefootercomponent .homefootertop .homefootertopleft .homefooterlogotext p span {
+    border: ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 560;
+    font-size: 100%;
+}
+
+.homefootercomponent .homefootertop .homefootertopleft .homefooterdownloadbuttons {
+    border: ;
+    height: 48.45px;
+    width: 294px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 15px;
+}
+
+.homefootercomponent .homefootertop .homefootertopleft .homefooterdownloadbuttons a {
+    cursor: pointer;
+}
+
+.homefootercomponent .homefootertop .homefootertopleft .homefooterdownloadbuttons a img {
+    width: 135px;
+    height: 40.45px;
+
+}
+
+.homefootercomponent .homefootertop .homefootertopleft .homefooterdownloadbuttons a:nth-child(1) img {
+    padding-top: 4px;
+}
+
+
+.homefootercomponent .homefootertop .homefootertopleft .homefooterdownloadbuttons a:nth-child(2) img {
+    height: 48.45px;
+    width: 145px;
+}
+
+table {
+    border: ;
+    border-spacing: ;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+}
+
+.homefootercomponent .homefootertop .homefooterright {
+    padding-top: 6px;
+}
+
+.homefootercomponent .homefootertop .homefooterright table tr td a {
+    text-decoration: none;
+    color: black;
+}
+
+.homefootercomponent .homefootertop .homefooterright table tr td a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.homefootercomponent .homefootertop .homefooterright table tr {
+    border: ;
+}
+
+
+.homefootercomponent .homefootertop .homefooterright table tr td {
+    border: ;
+    width: 277.833px;
+    height: 24px;
+    padding-top: 0px;
+    padding-bottom: 14px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.homefootercomponent .homefootertop .homefooterright table tr:nth-child(7) {
+    margin-top: 27px;
+}
+
+.homefootercomponent .homefootertop .homefooterright table tr:nth-child(7) td:nth-child(2) {
+    border: ;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 8px;
+
+}
+
+.homefootercomponent .homefootertop .homefooterright table tr:nth-child(7) td:nth-child(2) p {
+    border: ;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.homefootercomponent .homefootertop .homefooterright table tr:nth-child(7) td:nth-child(2) img {
+    border: ;
+    width: 16px;
+    height: 16px;
+}
+
+.homefootercomponent .homefooterbottom {
+    border-top: #F3F3F3 1px solid;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 40px;
+    width: 1181px;
+}
+
+.homefootercomponent .homefooterbottom a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.homefootercomponent .homefooterbottom a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.homefootercomponent .homefooterbottom .homefooterbottombegin {
+    border: ;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 510.365px;
+}
+
+.homefootercomponent .homefooterbottom .homefooterbottombegin .bottomleft {
+    border: ;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 24px;
+    width: 96;
+}
+
+.homefootercomponent .homefooterbottom .homefooterbottombegin .bottomleft a img {
+    border: ;
+    width: 16px;
+    height: 16px;
+}
+
+.homefootercomponent .homefooterbottom .homefooterbottombegin .bottomright {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 40px;
+}
+
+.homefootercomponent .homefooterbottom .homefooterbottomend {
+    border: ;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0px 40px;
+}
+
+.homefootercomponent .homefooterbottom .homefooterbottomend p {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.homefootercomponent .homefooterbottom .homefooterbottomend a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: black;
+    cursor: pointer;
+}
+
+.homefootercomponent .homefooterbottom .homefooterbottomend a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

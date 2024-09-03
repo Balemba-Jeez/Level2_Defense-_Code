@@ -4,13 +4,14 @@
     flex-direction: row;
     gap: 0px 16px;
     width: 511px;
-    height: 48px;
+    height: 53px;
     background-color: white;
+    justify-content: center;
 }
 
 .addressinputcomponent .addressinputcomponent_inputitem img {
     width: 24px;
-    height: 24px;
+    height: auto;
     margin-top: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -27,6 +28,7 @@
     border-right-width: 0px;
     border-left-width: 0px;
     border-bottom-width: 0px;
+
 }
 
 .addressinputcomponent .addressinputcomponent_inputitem .addressinputcomponent_rightinputitem input {
@@ -38,6 +40,7 @@
     word-spacing: 1px;
     font-size: 16px;
     background-color: white;
+    margin-top: 3px;
 }
 
 .addressinputcomponent .addressinputcomponent_inputitem .addressinputcomponent_rightinputitem input:focus {
@@ -54,4 +57,5 @@
     font-weight: ;
     background-color: white;
     color: black;
+    margin-top: 3px;
 }

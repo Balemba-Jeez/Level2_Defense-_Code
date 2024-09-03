@@ -1,0 +1,183 @@
+.homeheader_leftitem {
+    border: ;
+    margin-top: 6px;
+    padding-right: 30px;
+    /*height: 79%;*/
+    border: ;
+    width: ;
+    height: ;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0px 10px;
+
+}
+
+
+
+.homeheader_leftitem a {
+    width: 66.367px;
+    height: 20px;
+    border: hidden;
+    border-radius: 500px 500px 500px 500px;
+    margin-top: 10px;
+    padding-top: 5.25px;
+    padding-bottom: 6.55px;
+    padding-left: 5.25px;
+    padding-right: 5.25px;
+    background-color: rgb(243, 243, 243);
+    font-size: 90%;
+    font-weight: 600;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    text-decoration: none;
+    text-align: center;
+    background-color: transparent;
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: calc(0, 0, 1, 1);
+}
+
+.homeheader_leftitem .Signup {
+    background-color: rgb(243, 243, 243);
+    color: black;
+}
+
+.homeheader_leftitem .Login {
+    background-color: white;
+    color: black;
+}
+
+
+.homeheader_leftitem .Signup:hover {
+    background-color: #DDDDDD;
+    cursor: pointer;
+}
+
+.homeheader_leftitem .Login:hover {
+    background-color: #F3F3F3F3;
+    cursor: pointer;
+}
+
+.homeheader_leftitem button {
+    border: solid 2px;
+    display: flex;
+    flex-direction: row;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: calc(0, 0, 1, 1);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.homeheader_leftitem button:hover {
+    border-radius: 50%;
+    background-color: #DDDDDD;
+}
+
+
+.homeheader_leftitem button img {
+    border: none;
+    width: 22px;
+    height: 22px;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+.homeheader_leftitem button div {
+    border: none;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: rgb(14, 131, 69);
+    text-align: center;
+    line-height: 20px;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    color: white;
+    position: relative;
+    top: 3px;
+    left: -11px;
+    right: ;
+    bottom: ;
+}
+
+.homeheader_leftitem .searchinputcomponent_inputitem {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 12px;
+    width: ;
+    /*height: 48px;*/
+    background-color: #F3F3F3;
+    border-radius: 500px;
+    width: 630.383px;
+    height: 30px;
+    margin-top: 10px;
+    padding-top: 5.25px;
+    padding-bottom: 6.55px;
+    padding-left: 5.25px;
+    padding-right: 5.25px;
+
+}
+
+.homeheader_leftitem .searchinputcomponent_inputitem img {
+    width: auto;
+    height: 14px;
+    margin-top: 0px;
+    padding-left: 16px;
+    padding-top: 4px;
+}
+
+.homeheader_leftitem .searchinputcomponent_inputitem .searchinputcomponent_rightinputitem {
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top-width: 0px;
+    background-color: #F3F3F3;
+    margin-right: 16px;
+}
+
+.homeheader_leftitem .searchinputcomponent_inputitem .searchinputcomponent_rightinputitem input {
+
+    border: none;
+    padding: 0px;
+    font-family: "Barlow",
+        sans-serif;
+    color: black;
+    word-spacing: 1px;
+    background-color: #F3F3F3;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 1px;
+    width: 100%;
+}
+
+.homeheader_leftitem .searchinputcomponent_inputitem .searchinputcomponent_rightinputitem input:focus {
+    outline: none;
+}
+
+.homeheader_leftitem .searchinputcomponent_inputitem .searchinputcomponent_rightinputitem button {
+    cursor: pointer;
+    border: none;
+    padding-bottom: 0;
+    padding-top: 0;
+    background-color: #F3F3F3;
+}
+
+.homeheader_leftitem .searchinputcomponent_inputitem .searchinputcomponent_rightinputitem button img {
+    width: auto;
+    height: 16px;
+    margin: 0;
+
+}

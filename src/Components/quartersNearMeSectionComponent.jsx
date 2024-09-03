@@ -11,7 +11,7 @@ class QuartersNearMeSectionComponent extends Component {
                 </div>
 
                 <div className='map'>
-
+                    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=en&amp;q=Mballa2,%20Yaound%C3%A9,%20Cameroon+(My%20Business%20Name)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps devices</a></iframe>
 
                 </div>
 

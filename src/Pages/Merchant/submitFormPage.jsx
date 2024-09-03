@@ -60,6 +60,7 @@ class SubmitFormPage extends Component {
                     </div>
 
                 </div>
+
                 <div className='submitformppagefooter'>
                     <button type="submit" >Submit</button>
                 </div>

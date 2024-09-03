@@ -1,0 +1,205 @@
+.merchantbusinesspagesetaddresssectioncomponent {
+    border: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 57px;
+
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .aboutsection {
+    border: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .aboutsection .aboutimage {
+    border: none;
+    background: transparent;
+}
+
+
+.merchantbusinesspagesetaddresssectioncomponent .aboutsection .aboutimage img {
+    width: 574.533px;
+    height: 250px;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 8px;
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .aboutsection .abouttext {
+    display: grid;
+    align-content: end;
+    padding-bottom: 11px;
+}
+
+
+.merchantbusinesspagesetaddresssectioncomponent .aboutsection .abouttext h1 {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .aboutsection .abouttext p {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: ;
+    margin: 0;
+    padding: 0;
+    color: #6B7280
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .items {
+    margin-top: 40px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .items p {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .items .itemelements {
+    border: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 24px 24px;
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .items .itemelements .itemelement {
+    border: solid 1px #f3f3f3;
+    cursor: pointer;
+    display: flex;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .items .itemelements .itemelement .leftside {
+    border: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    width: 400.333px;
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .items .itemelements .itemelement .leftside .leftsidetext {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 8px;
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .items .itemelements .itemelement .leftside .leftsidetext p {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .items .itemelements .itemelement .leftside p {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .items .itemelements .itemelement .rightside {
+    cursor: pointer;
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .items .itemelements .itemelement .rightside img {
+    width: 90px;
+    height: 145px;
+    cursor: pointer;
+    border-radius: 8px;
+    object-fit: contain;
+
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .checkoutbox {
+    border: none;
+    display: flex;
+    flex-direction: ;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .checkoutbox .endbox {
+    width: 428px;
+    border: solid #f3f3f3;
+    opacity: 0.5;
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .checkoutbox .endbox .checkoutbutton {
+    border-bottom: solid #f3f3f3;
+    /*border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .checkoutbox .endbox .checkoutbutton button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: ;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 8px;
+    border: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .checkoutbox .endbox .checkoutbutton button:hover {
+    cursor: pointer;
+    background-color: #282828;
+}
+
+.merchantbusinesspagesetaddresssectioncomponent .checkoutbox .endbox p {
+    margin: 0;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}

@@ -2,6 +2,7 @@
     border: ;
     padding-left: 40px;
     padding-right: 40px;
+
 }
 
 .setaddresssectioncomponent .paymentoptions {
@@ -9,6 +10,8 @@
     height: 52px;
     background-color: ;
     border: ;
+    display: flex;
+    flex-direction: row
 }
 
 .setaddresssectioncomponent .paymentoptions img {
@@ -24,5 +27,5 @@
     padding-top: 0px;
     width: 48px;
     height: 34px;
-    margin-bottom: 9px;
+    margin-top: 9px;
 }

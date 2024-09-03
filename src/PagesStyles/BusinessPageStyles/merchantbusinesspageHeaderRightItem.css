@@ -1,0 +1,117 @@
+.merchantbusinesspageheader_rightitem {
+    border: none;
+    /*width: 194.6px;*/
+    padding-left: 30px;
+    display: flex;
+    gap: 0px 24px;
+    /*justify-content: space-between;*/
+    margin-top: 3px;
+}
+
+.merchantbusinesspageheader_rightitem div:nth-child(1) {
+    border: none;
+}
+
+.merchantbusinesspageheader_rightitem div:nth-child(1) button svg {
+    border: ;
+
+}
+
+.merchantbusinesspageheader_rightitem div:nth-child(1) button svg line {
+    stroke: black;
+    stroke-width: 4px;
+}
+
+.merchantbusinesspageheader_rightitem div:nth-child(1) {
+    display: flex;
+}
+
+.merchantbusinesspageheader_rightitem div:nth-child(1) button {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: ;
+    height: 23.333;
+}
+
+.merchantbusinesspageheader_rightitem div:nth-child(1) button:hover {
+    background-color: #f3f3f3;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.merchantbusinesspageheader_rightitem div:nth-child(1) div {
+    border: ;
+    width: 138.43px;
+    height: 40.533px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 6px;
+    margin-top: 10.8px;
+    cursor: pointer;
+}
+
+.merchantbusinesspageheader_rightitem div:nth-child(1) div img {
+    border: ;
+    height: 44px;
+    width: 44px;
+    margin-top: -8px;
+}
+
+
+.merchantbusinesspageheader_rightitem div:nth-child(1) div p {
+    border: ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: ;
+    font-size: 130%;
+    letter-spacing: -1px;
+    word-spacing: -2px;
+    width: 98.9px;
+    margin-top: 1.8px;
+    margin-left: -8px;
+}
+
+.merchantbusinesspageheader_rightitem div:nth-child(1) div p span {
+    border: ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 560;
+    font-size: 100%;
+}
+
+.merchantbusinesspageheader_rightitem .address {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    padding-top: 17px;
+    gap: 0px 4px;
+}
+
+.merchantbusinesspageheader_rightitem .address img {
+    border: none;
+    width: 16px;
+    height: 16px;
+}
+
+.merchantbusinesspageheader_rightitem .address p {
+    border: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 540;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -1px;
+    display: flex;
+}
+
+.merchantbusinesspageheader_rightitem .address p img {
+    border: none;
+    width: 15px;
+    height: 15px;
+    margin-left: 4px;
+    margin-top: 2px;
+}
