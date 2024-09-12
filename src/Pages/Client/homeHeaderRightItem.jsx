@@ -1,7 +1,19 @@
 import React, { Component } from 'react';
 import '../../PagesStyles/ClientPageStyles/homeHeaderRightItem.css'
 class HomeHeaderRightItem extends Component {
-    state = {}
+    state = {
+
+        address: ""
+
+    }
+
+    componentDidMount() {
+        const savedAddress = localStorage.getItem('address');
+        if (savedAddress) {
+            this.setState({ address: savedAddress });
+        }
+    }
+
     render() {
         return (
             <div className='homeheader_rightitem'>
@@ -24,7 +36,7 @@ class HomeHeaderRightItem extends Component {
                 <div className='address'>
                     <img src={require('../../clientlocationicon.png')} alt="" />
                     <p>
-                        Carrefour Regir
+                        {this.state.address || 'Carrefour Regir'}
                         <img src={require('../../dropdownicon.png')} alt="" />
                     </p>
 

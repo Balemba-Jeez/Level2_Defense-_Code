@@ -6,10 +6,24 @@ class CheckOutPageComponent extends Component {
     render() {
         return (
             <>
+                <div className='CheckOutPageheadersection'>
+                    <div className='CheckOutPageheadersectionleft'>
+                        <button>
+                            <img src={require('../.././left-arrowmain.png')} alt="Arrow icon" className='arrowicon' />
+                        </button>
+                        <p>Back to store</p>
+                    </div>
+
+                    <div className='CheckOutPageheadersectionright'>
+                        <img src={require('../../gas-cylinder11.png')} alt='Gas Space Logo' />
+                        <p>Gas <span>Space</span></p>
+                    </div>
+
+                </div>
                 <main className='container'>
-                    <h1 className='heading'>
+                    {/*<h1 className='heading'>
                         <ion-icon name="cart-outline"></ion-icon> Shopping Cart
-                    </h1>
+                    </h1> */}
 
                     <div className='item-flex'>
                         {/**
@@ -19,10 +33,33 @@ class CheckOutPageComponent extends Component {
 
                         <section className="checkout">
 
-                            <h2 className="section-heading">Payment details</h2>
+                            <div className='deliveryform'>
+                                <div className='deliveryformelement r'>
+                                    <div className='leftside'>
+                                        <h3>Delivery details</h3>
+                                    </div>
+                                    <div className='rightside'></div>
+
+                                </div>
+
+                                <div className='deliveryformelement a'>
+                                    <div className='leftside'>
+                                        {/*<img src="" alt="location" />*/}
+                                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"><title>Delivery bag</title><path d="M18 6V1H6v5H1v11c0 3.3 2.7 6 6 6h10c3.3 0 6-2.7 6-6V6h-5ZM9 4h6v2H9V4Zm11 13c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V9h16v8Z" fill="currentColor"></path></svg>
+                                        <p>Carrefour Regir</p>
+                                    </div>
+                                    <div className='rightside'>
+                                        <button>Edit</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
 
                             <div className="payment-form">
-
+                                <h2 className="section-heading">Payment details</h2>
 
                                 <div className="payment-method">
 
@@ -31,12 +68,12 @@ class CheckOutPageComponent extends Component {
 
                                         <span>Credit card</span>
 
-                                        <ion-icon className="checkmark" name="checkmark-circle"></ion-icon>
+                                        <ion-icon className="checkmark fill" name="checkmark-circle"></ion-icon>
                                     </button>
 
 
                                     <button className='method'>
-                                        <ion-icon name="card"></ion-icon>
+                                        <ion-icon name="logo-paypal"></ion-icon>
 
                                         <span>Paypal</span>
 
@@ -53,7 +90,7 @@ class CheckOutPageComponent extends Component {
                                         <input type="text" id='cardholder-name' name='cardholder-name' className="input-default" />
                                     </div>
 
-                                    <div className="card-number">
+                                    {/*<div className="card-number">
                                         <label htmlFor="card-number" className="label-default">Card number</label>
 
                                         <input type="number" id='card-number' name='card-number' className="input-default" />
@@ -77,13 +114,13 @@ class CheckOutPageComponent extends Component {
 
                                             <input type="number" id='cvv' name='cvv' className="input-default" />
                                         </div>
-                                    </div>
+                                    </div>*/}
                                 </form>
                             </div>
-
                             <button className='btn btn-primary'>
-                                <b>Pay</b> $ <span id='payAmount'>2.15</span>
+                                <b>Pay</b> XAF <span id='payAmount'>2.15</span>
                             </button>
+
                         </section>
 
                         {/**
@@ -129,7 +166,7 @@ class CheckOutPageComponent extends Component {
                                             </div>
                                         </div>
 
-                                        <button id="product-close-btn">
+                                        <button className="product-close-btn">
                                             <ion-icon name="close-outline"></ion-icon>
                                         </button>
                                     </div>
@@ -168,12 +205,47 @@ class CheckOutPageComponent extends Component {
                                             </div>
                                         </div>
 
-                                        <button id="product-close-btn">
+                                        <button className="product-close-btn">
                                             <ion-icon name="close-outline"></ion-icon>
                                         </button>
                                     </div>
                                 </div>
 
+                            </div>
+
+                            <div className="wrapper">
+
+                                {/*<div className="discount-token">
+
+                                    <label htmlFor="token" className="label-default">Gift card/Discount code</label>
+
+                                    <div className="wrapper-flex">
+
+                                        <input type="text" name="discount-token" id="discount-token" className="input-default" />
+
+                                        <button className="btn btn-outline">Apply</button>
+                                    </div>
+                                </div>*/}
+
+                                <div className="amount">
+                                    <h6>Order total</h6>
+                                    <div className='totaldetails'>
+                                        <div className="subtotal">
+                                            <span>Subtotal</span> <span>XAF <span id="subtotal">2.05</span></span>
+                                        </div>
+
+                                        {/*<div className="tax">
+                                        <span>Tax</span> <span>$ <span id="tax">0.10</span></span>
+                                    </div>*/}
+
+                                        <div className="shipping">
+                                            <span>Delivery</span> <span>XAF <span id="shipping">2.05</span></span>
+                                        </div>
+                                    </div>
+                                    <div className="total">
+                                        <span>Total</span> <span>XAF <span id="subtotal">2.15</span></span>
+                                    </div>
+                                </div>
                             </div>
                         </section>
                     </div>
