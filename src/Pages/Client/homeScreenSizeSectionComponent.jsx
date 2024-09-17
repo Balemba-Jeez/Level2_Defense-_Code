@@ -3,12 +3,14 @@ import '../../PagesStyles/ClientPageStyles/homeScreenSizeSectionComponent.css'
 import HomeHeaderComponent from './homeHeaderComponent';
 import HomeSetAddressSectionComponent from './homeSetAddressSectionComponent';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 class HomeScreenSizeSectionComponent extends Component {
     state = {
         suppliers: [],  // to store the fetched suppliers data
+        selectedBrand: '', // Track the selected brand
         address: 'Lycée de Mballa II, school, Yaoundé, Cameroon'  // Placeholder for address
-    }
+    };
 
     // Method to remove duplicate suppliers by 'id'
     removeDuplicateSuppliers(suppliers) {
@@ -18,6 +20,31 @@ class HomeScreenSizeSectionComponent extends Component {
         return uniqueSuppliers;
     }
 
+
+
+    // Fetch supplier data when the component updates (due to selectedBrand change)
+    async componentDidUpdate(prevProps, prevState) {
+        if (prevState.selectedBrand !== this.state.selectedBrand) {
+            try {
+                const encodedAddress = encodeURIComponent(this.state.address);
+                const response = await axios.get(`http://localhost:4000/api/Suppliers/${encodedAddress}/${this.state.selectedBrand}`);
+
+                console.log('Raw Data from API:', response.data); // Log raw response data
+
+                const uniqueSuppliers = this.removeDuplicateSuppliers(response.data); // Remove duplicates
+                this.setState({ suppliers: uniqueSuppliers }); // Update state with unique suppliers
+
+                console.log('Unique Suppliers:', uniqueSuppliers); // Log unique suppliers
+            } catch (error) {
+                console.error('Error fetching suppliers:', error);
+            }
+        }
+    }
+
+
+    handleBrandSelect = (brand) => {
+        this.setState({ selectedBrand: brand });
+    };
 
 
     // Fetch supplier data once the component is mounted
@@ -42,7 +69,8 @@ class HomeScreenSizeSectionComponent extends Component {
     async fetchSuppliers() {
         try {
             const encodedAddress = encodeURIComponent(this.state.address); // Encode the address for the API request
-            const response = await axios.get(`http://localhost:4000/api/Suppliers/${encodedAddress}`);
+            const encodedBrand = encodeURIComponent(this.state.selectedBrand);
+            const response = await axios.get(`http://localhost:4000/api/Suppliers/${encodedAddress}/${encodedBrand}`);
 
             console.log('Raw Data from API:', response.data);  // Log raw response data
 
@@ -64,7 +92,7 @@ class HomeScreenSizeSectionComponent extends Component {
         return (
             <div className='homescreensizesectioncomponent'>
                 <HomeHeaderComponent />
-                <HomeSetAddressSectionComponent />
+                <HomeSetAddressSectionComponent onBrandSelect={this.handleBrandSelect} />
 
                 {/* Supplier section */}
 
@@ -72,7 +100,7 @@ class HomeScreenSizeSectionComponent extends Component {
 
                     {/* Dynamically render supplier cards */}
                     {this.state.suppliers.map((supplier, index) => (
-                        <a href={`/Merchant/BusinessPage/${supplier.id}`} key={index}>
+                        <Link key={supplier.ID} to={`/Merchant/BusinessPage/${supplier.ID}`}>
                             <div className='gasstoreboard'>
                                 <div className='gasstoreboardimage'>
                                     {/* Load supplier image dynamically if available, fallback to default image */}
@@ -92,7 +120,7 @@ class HomeScreenSizeSectionComponent extends Component {
                                     <div>{supplier.avgRating}</div> {/* Assuming the rating will be dynamic later */}
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     ))}
                 </div>
 

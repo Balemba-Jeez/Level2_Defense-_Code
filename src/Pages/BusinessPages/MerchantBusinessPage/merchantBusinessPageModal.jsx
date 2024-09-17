@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import '../../../PagesStyles/BusinessPageStyles/merchantBusinessPageModal.css'
+
 class MerchantBusinessPageModal extends Component {
     state = {}
     render() {
+
+        const { bottle, closeModal } = this.props; // Destructure bottle from props
+
+        console.log('bottleDetails:', bottle);
         return (
             <div className="modalbackground">
                 <div className='modal'>
@@ -18,8 +23,10 @@ class MerchantBusinessPageModal extends Component {
                                 //style={{ cursor: 'pointer' }} // Add pointer cursor for better UX
                                 />
                             </div>
-                            <h2>Tradex</h2>
-                            <p>Reliable 6kg Tradex gas bottles, perfect for household use. Durable and efficient, ensuring consistent energy supply.</p>
+
+                            {/* Display dynamic gas item information */}
+                            <h2>{bottle.brand || 'Gas Item'}</h2>
+                            <p>{`${bottle.weight} kg of ${bottle.brand}, priced at ${bottle.price} XAF`}</p>
                         </div>
 
                         <div className='button'>
@@ -32,7 +39,7 @@ class MerchantBusinessPageModal extends Component {
                                     +
                                 </div>
                             </div>
-                            <button>Add <span>1</span> to cart <span>6500</span>fcfa</button>
+                            <button>Add <span>1</span> to cart <span>{bottle.price}</span>fcfa</button>
                         </div>
                     </div>
 

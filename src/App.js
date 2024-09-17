@@ -18,7 +18,7 @@ import ClientHomePage from './Pages/Client/clientHomePage.jsx';
 import MerchantBusinessPage from './Pages/BusinessPages/MerchantBusinessPage/merchantBusinessPage.jsx';
 import MerchantBusinessPageModal from './Pages/BusinessPages/MerchantBusinessPage/merchantBusinessPageModal.jsx';
 import CheckOutPageComponent from './Pages/BusinessPages/checkOutPageComponent.jsx';
-
+import MerchantBusinessPageSetAddressSectionComponent from './Pages/BusinessPages/MerchantBusinessPage/merchantBusinessPageSetAddressSectionComponent.jsx';
 const router = createBrowserRouter([
   {
     path: '/client',
@@ -76,16 +76,22 @@ const router = createBrowserRouter([
     path: '/delivery/submitapplication/deliverypersonIDCard',
     element: <DeliverySubmitFormPageIdCd />
     },
-    {
-    path: '/Merchant/BusinessPage',
+    /*{
+    path: '/merchant/BusinessPage',
     element: <MerchantBusinessPage />
-    },
+    },*/
+
     {
-    path: '/Merchant/BusinessPage/modal',
+    path: '/Merchant/BusinessPage/:supplierID',
+    element: <MerchantBusinessPageSetAddressSectionComponent />
+    },
+
+    {
+    path: '/merchant/BusinessPage/modal',
     element: <MerchantBusinessPageModal />
     },
     {
-    path: '/Merchant/BusinessPage/CheckOutPage',
+    path: '/merchant/BusinessPage/CheckOutPage',
     element: <CheckOutPageComponent />
     },
     
