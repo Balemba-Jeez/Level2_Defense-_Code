@@ -16,7 +16,7 @@
 
 .homeheader_leftitem a {
     width: 66.367px;
-    height: 20px;
+    height: 28px;
     border: hidden;
     border-radius: 500px 500px 500px 500px;
     margin-top: 10px;
@@ -61,6 +61,8 @@
 
 .homeheader_leftitem button {
     border: solid 2px;
+    width: 48px;
+    height: 48px;
     display: flex;
     flex-direction: row;
     outline: none;
@@ -69,14 +71,11 @@
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: calc(0, 0, 1, 1);
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    border-radius: 50%;
 }
 
 .homeheader_leftitem button:hover {
-    border-radius: 50%;
+
     background-color: #DDDDDD;
 }
 
@@ -94,7 +93,8 @@
     font-family: Arial,
         Helvetica,
         sans-serif;
-    display: block;
+    display: flex;
+    justify-content: center;
     font-size: 12px;
     font-weight: 500;
     background-color: rgb(14, 131, 69);
@@ -109,6 +109,10 @@
     left: -11px;
     right: ;
     bottom: ;
+    padding-bottom: 1px;
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-top: 1px;
 }
 
 .homeheader_leftitem .searchinputcomponent_inputitem {
@@ -120,7 +124,7 @@
     /*height: 48px;*/
     background-color: #F3F3F3;
     border-radius: 500px;
-    width: 630.383px;
+    width: 591.383px;
     height: 30px;
     margin-top: 10px;
     padding-top: 5.25px;
@@ -173,6 +177,9 @@
     padding-bottom: 0;
     padding-top: 0;
     background-color: #F3F3F3;
+    border: none;
+    border-radius: 0%;
+    height: auto;
 }
 
 .homeheader_leftitem .searchinputcomponent_inputitem .searchinputcomponent_rightinputitem button img {

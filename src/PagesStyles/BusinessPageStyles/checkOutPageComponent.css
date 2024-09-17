@@ -47,7 +47,10 @@
 }
 
 html {
-    font-family: 'Source Sans 3', sans-serif;
+    /*font-family: 'Source Sans 3', sans-serif;*/
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
 }
 
 a {
@@ -76,11 +79,12 @@ input {
     font: inherit;
     width: 100%;
     /*border: none;*/
+
 }
 
-input:focus {
+/*input:focus {
     outline: 2px solid var(--azure);
-}
+}*/
 
 /**
 *Remove number input up & down button
@@ -89,14 +93,24 @@ input:focus {
 
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
-    appearance: none;
+    -webkit-appearance: none;
     -webkit-animation: none;
     margin: 0;
 }
 
 /**
+*Remove number input up & down button - Fire fox
+
+*/
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/**
 * custom scrollbar style
 */
+/*
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -113,7 +127,7 @@ input::-webkit-outer-spin-button {
 ::-webkit-scrollbar-thumb:hover {
     background: hsl(0, 0%, 70%);
 }
-
+*/
 
 /***
 *********** MAIN STYLE *********
@@ -291,24 +305,49 @@ input::-webkit-outer-spin-button {
 }
 
 .payment-method .method {
-    border: 1px solid var(--quick-silver);
-    border-radius: var(--radius);
+    border-radius: 7px;
+    border: solid 2px #f3f3f3;
     width: 50%;
     display: flex;
     align-items: center;
     padding: 15px 30px;
     gap: 20px;
     cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
 }
 
-.payment-method .selected {
-    border-color: var(--azure);
+
+.payment-method .mtn:hover {
+
+    border: 2px solid #f3be10;
 }
+
+
+.payment-method .orang:hover {
+    border-color: #ff7900;
+}
+
+/*.payment-method .selected {
+    border-color: var(--azure);
+}*/
 
 .payment-method .method ion-icon {
     font-size: 20px;
 }
 
+.payment-method .method img {
+    width: 30px;
+    height: 30px;
+}
+
+.payment-method .method span {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-weight: normal;
+}
 
 .payment-method .method .checkmark {
     margin-left: auto;
@@ -334,16 +373,20 @@ ion-icon[name="checkmark-circle"] {
 
 
 .label-default {
-    padding-left: 10px;
+    /*padding-left: 10px;*/
     margin-bottom: 5px;
-    font-size: var(--fs-14);
+    /*font-size: var(--fs-14);*/
     color: var(--spanish-gray);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .input-default {
     background: var(--platinum);
     border-radius: var(--radius);
     color: var(--davys-gray);
+
 }
 
 .payment-form input {
@@ -364,6 +407,7 @@ ion-icon[name="checkmark-circle"] {
     transition-property: background-color, border;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0.2, 0.8, 0.4, 1);
+
 }
 
 .payment-form input:focus {

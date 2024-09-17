@@ -11,17 +11,17 @@ class FooterComponent extends Component {
                     <div className='footertopleft'>
 
                         <div className='footerlogotext'>
-                            <img src='gas-cylinder11.png' alt='Gas Space Logo' />
+                            <img src={require('../gas-cylinder11.png')} alt='Gas Space Logo' />
                             <p>Gas <span>Space</span></p>
                         </div>
 
                         <div className='footerdownloadbuttons'>
                             <a href="">
-                                <img src="DownloadontheAppstore.jpeg" alt="Download on the Appstore image" />
+                                <img src={require('../DownloadontheAppStore.jpeg')} alt="Download on the Appstore image" />
                             </a>
 
                             <a href="">
-                                <img src="GETITONGooglePlay.jpeg" alt="GET IT ON Google Play image" />
+                                <img src={require('../GetITONGooglePlay.jpeg')} alt="GET IT ON Google Play image" />
                             </a>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ class FooterComponent extends Component {
                             <tr>
                                 <td></td>
                                 <td>
-                                    <a href=""><img src="languageicon.png" alt="Translate icon" /></a>
+                                    <a href=""><img src={require("../languageicon.png")} alt="Translate icon" /></a>
                                     <a href=""><p>English</p></a>
                                 </td>
                             </tr>
@@ -81,16 +81,16 @@ class FooterComponent extends Component {
                     <div className='footerbottombegin'>
                         <div className='bottomleft'>
                             <a href="">
-                                <img src="facebooklogo.png" alt="Facebook logo" />
+                                <img src={require("../facebooklogo.png")} alt="Facebook logo" />
 
                             </a>
 
                             <a href="">
-                                <img src="twitterlogo.png" alt="Facebook logo" />
+                                <img src={require("../twitterlogo.png")} alt="Facebook logo" />
                             </a>
 
                             <a href="">
-                                <img src="instagramlogo.png" alt="Facebook logo" />
+                                <img src={require("../instagramlogo.png")} alt="Facebook logo" />
                             </a>
 
                         </div>

@@ -63,21 +63,25 @@ class CheckOutPageComponent extends Component {
 
                                 <div className="payment-method">
 
-                                    <button className='method selected'>
-                                        <ion-icon name="card"></ion-icon>
+                                    <button className='method selected mtn'>
+                                        {/*<ion-icon name="card"></ion-icon>*/}
 
-                                        <span>Credit card</span>
+                                        <img src={require('../../mobilemoney.png')} alt="mobile money logo" />
 
-                                        <ion-icon className="checkmark fill" name="checkmark-circle"></ion-icon>
+                                        <span>Mobile money</span>
+
+                                        {/*<ion-icon className="checkmark fill" name="checkmark-circle"></ion-icon>*/}
                                     </button>
 
 
-                                    <button className='method'>
-                                        <ion-icon name="logo-paypal"></ion-icon>
+                                    <button className='method orang'>
+                                        {/*<ion-icon name="logo-paypal"></ion-icon>*/}
 
-                                        <span>Paypal</span>
+                                        <img src={require('../../OrangeMoneymainlogo.jpg')} alt="Orange money logo" />
 
-                                        <ion-icon className="checkmark" name="checkmark-circle-outline"></ion-icon>
+                                        <span>Orange money</span>
+
+                                        {/*<ion-icon className="checkmark" name="checkmark-circle-outline"></ion-icon>*/}
                                     </button>
 
                                 </div>
@@ -85,9 +89,9 @@ class CheckOutPageComponent extends Component {
                                 <form action="#">
 
                                     <div className="cardholder-name">
-                                        <label htmlFor="cardholder-name" className="label-default">Cardholder name</label>
+                                        <label htmlFor="cardholder-name" className="label-default">Account number</label>
 
-                                        <input type="text" id='cardholder-name' name='cardholder-name' className="input-default" />
+                                        <input type="number" id='cardholder-name' name='cardholder-name' className="input-default" />
                                     </div>
 
                                     {/*<div className="card-number">

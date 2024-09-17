@@ -42,10 +42,24 @@ class AddressInputComponent extends Component {
     ///////////////////////////////////
 
     // Handler to update the address in state
-    handleAddressChange = (e) => {
+    /*handleAddressChange = (e) => {
         this.setState({ address: e.target.value });
         localStorage.setItem('address', e.target.value); // Update localStorage
+    };*/
+
+
+    // Handler to update the address in state (manual typing)
+    handleAddressChange = (address) => {
+        this.setState({ address });
+        localStorage.setItem('address', address); // Update localStorage
     };
+
+    // Handler when address is selected from Autocomplete
+    handleAddressSelect = (address) => {
+        this.setState({ address });
+        localStorage.setItem('address', address); // Update localStorage
+    }
+
 
     // Handler for the Search button click
     handleSearchClick = () => {
@@ -73,7 +87,8 @@ class AddressInputComponent extends Component {
                 <AddressInputComponentInputItem
 
                     address={this.state.address}
-                    onChange={this.handleAddressChange}
+                    onChange={this.handleAddressChange} // Handle manual input
+                    onAddressSelect={this.handleAddressSelect} // Handle Autocomplete selection
                     onClear={this.handleClear}
 
                 />

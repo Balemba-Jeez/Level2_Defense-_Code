@@ -16,7 +16,7 @@ class HeaderRightItem extends Component {
                     </button>
 
                     <div>
-                        <img src='gas-cylinder11.png' alt='Gas Space Logo' />
+                        <img src={require('../gas-cylinder11.png')} alt='Gas Space Logo' />
                         <p>Gas <span>Space</span></p>
                     </div>
                 </div>

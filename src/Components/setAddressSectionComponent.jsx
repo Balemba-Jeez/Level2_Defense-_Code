@@ -9,8 +9,8 @@ class SetAddressSectionComponent extends Component {
             <div className='setaddresssectioncomponent'>
                 <OrderDeliveryComponent />
                 <div className='paymentoptions'>
-                    <img src="MTN-MOMOmainlogo.jpg" alt="momo logo" />
-                    <img src="OrangeMoneymainlogo.jpg" alt="momo logo" />
+                    <img src={require('../MTN-MOMOmainlogo.jpg')} alt='Gas Space Logo' />
+                    <img src={require('../OrangeMoneymainlogo.jpg')} alt='Gas Space Logo' />
                 </div>
             </div>
         );
