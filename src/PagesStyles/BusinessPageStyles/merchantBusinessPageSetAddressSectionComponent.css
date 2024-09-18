@@ -3,7 +3,7 @@
     padding-left: 40px;
     padding-right: 40px;
     margin-top: 57px;
-
+    margin-bottom: 57px;
 }
 
 .merchantbusinesspagesetaddresssectioncomponent .aboutsection {
@@ -144,7 +144,7 @@
 .merchantbusinesspagesetaddresssectioncomponent .checkoutbox {
     border: none;
     display: flex;
-    flex-direction: ;
+    flex-direction: column;
     justify-content: end;
     margin-top: 20px;
 }
@@ -153,6 +153,7 @@
     width: 428px;
     border: solid #f3f3f3;
     opacity: 0.5;
+    margin-left: 794px;
 }
 
 .merchantbusinesspagesetaddresssectioncomponent .checkoutbox .endbox .checkoutbutton {
@@ -205,4 +206,140 @@
     padding-bottom: 15px;
     padding-right: 15px;
     padding-left: 15px;
+}
+
+
+.checkoutbox .cartlist {
+    width: 428px;
+    border: solid #f3f3f3;
+    /*opacity: 0.5;*/
+    padding-left: 9px;
+    padding-right: 9px;
+    border-top: none;
+    margin-left: 794px;
+}
+
+
+.checkoutbox .cartlist .cart_item {
+    border: white solid;
+    border-width: 1px;
+    display: flex;
+    /*border-radius: 7px 7px 7px 7px;*/
+    background-color: white;
+    padding-top: 8px;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    border-bottom: #f3f3f3 solid 1px;
+    height: 62px;
+}
+
+.checkoutbox .cartlist .cart_item .box_left {
+    border: ;
+    width: 50%;
+    height: 45.6667px;
+    display: flex;
+    justify-content: ;
+    margin-left: 0px;
+    margin-top: 7px;
+
+}
+
+
+.checkoutbox .cartlist .cart_item .box_left .checkbox {
+    /* Remove default styles */
+    -webkit-appearance: none;
+    appearance: none;
+    border: ;
+    width: 25px;
+    height: 24px;
+    margin-top: 10px;
+    border-width: ;
+    border-radius: 4px;
+    background-color: white;
+    /* White background */
+    border: 2px solid black;
+    /* Black border */
+    cursor: pointer;
+
+}
+
+.checkoutbox .cartlist .cart_item .box_left .checkbox:checked {
+    background-color: white;
+    /* White background when checked */
+    border: 2px solid black;
+    /* Black border */
+    position: relative;
+}
+
+.checkoutbox .cartlist .cart_item .box_left .checkbox::after {
+    content: "✔";
+    /* Black tick symbol */
+    color: black;
+    /* Black color for the tick */
+    font-size: 16px;
+    position: absolute;
+    top: -3px;
+    left: 2px;
+}
+
+
+
+
+
+.checkoutbox .cartlist .cart_item .box_left p {
+    border: ;
+    width: 70%;
+    height: 20.66666px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    font-family: "Gill Sans", sans-serif;
+    margin-left: 7px;
+    margin-top: 13px;
+}
+
+.checkoutbox .cartlist .cart_item .box_right {
+    border: ;
+    height: ;
+    width: 496.75px;
+    display: flex;
+    justify-content: end;
+    width: 496.75px;
+    /*margin-right: 7px;*/
+    margin-left: 0px;
+
+}
+
+.checkoutbox .cartlist .cart_item .box_right .task {
+    border: 2px none;
+    width: 9%;
+    height: 25.667px;
+    font-size: 78%;
+    font-weight: 50;
+
+    font-family: system-ui;
+    font-family: "Gill Sans", sans-serif;
+    margin-left: 7px;
+    margin-top: 19px;
+    text-align: center;
+    /*border-radius: 7px 7px 7px 7px;
+    background-color: #eceaea;*/
+    padding-top: 6px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 6px;
+    display: grid;
+    align-content: center;
+}
+
+.checkoutbox .cartlist .cart_item .box_right .task.time {
+    width: 30%;
+    height: 24.667px;
+
+}
+
+.checkoutbox .cartlist .cart_item .box_right .task.date {
+    letter-spacing: 1px;
+    width: 13%;
 }

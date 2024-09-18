@@ -324,9 +324,21 @@ input[type=number] {
     border: 2px solid #f3be10;
 }
 
+.payment-method .mtn:focus {
+
+    border: 2px solid #f3be10;
+    outline: none;
+}
 
 .payment-method .orang:hover {
     border-color: #ff7900;
+}
+
+
+.payment-method .orang:focus {
+
+    border-color: #ff7900;
+    outline: none;
 }
 
 /*.payment-method .selected {

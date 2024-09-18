@@ -38,6 +38,17 @@ class MerchantBusinessPageModal extends Component {
     };
 
 
+    // Function to handle adding to cart
+    handleAddToCart = () => {
+        const { bottle, addToCart, closeModal } = this.props; // Destructure props
+        const { quantity, totalPrice } = this.state;
+
+        // Call the addToCart function passed from parent
+        addToCart(bottle, quantity, totalPrice);
+
+        // Close the modal after adding to cart
+        closeModal();
+    };
 
 
     render() {
@@ -59,7 +70,8 @@ class MerchantBusinessPageModal extends Component {
                             <div className='cancelbutton'>
                                 <img src={require('../../../cancelicon1.jpg')} alt="cancel"
                                     onClick={this.props.closeModal} // Close modal on image click
-                                //style={{ cursor: 'pointer' }} // Add pointer cursor for better UX
+                                    //style={{ cursor: 'pointer' }} // Add pointer cursor for better UX
+                                    onClick={closeModal} // Close modal on image click
                                 />
                             </div>
 
@@ -78,7 +90,8 @@ class MerchantBusinessPageModal extends Component {
                                     +
                                 </div>
                             </div>
-                            <button>Add <span>{quantity}</span> to cart <span>{totalPrice}</span>fcfa</button>
+                            {/* Add an onClick event to handle adding to cart */}
+                            <button onClick={this.handleAddToCart}>Add <span>{quantity}</span> to cart <span id='separator'></span> <span>{totalPrice}</span>XAF</button>
                         </div>
                     </div>
 

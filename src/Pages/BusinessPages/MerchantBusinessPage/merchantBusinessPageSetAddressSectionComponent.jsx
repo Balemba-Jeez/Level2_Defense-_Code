@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 import '../../../PagesStyles/BusinessPageStyles/merchantBusinessPageSetAddressSectionComponent.css';
 import MerchantBusinessPageModal from './merchantBusinessPageModal';
 import axios from 'axios';
@@ -9,7 +10,10 @@ const MerchantBusinessPageSetAddressSectionComponent = () => {
     const [supplierBottles, setSupplierBottles] = useState([]);
     const [supplierDetails, setSupplierDetails] = useState({});
     const [selectedBottle, setSelectedBottle] = useState(null); // Add state for selected gas bottle
+    const [cart, setCart] = useState([]); // Cart state to track added items
+    const [isCheckoutEnabled, setIsCheckoutEnabled] = useState(false); // State for checkout button
     const { supplierID } = useParams(); // Use useParams to get supplierID
+    const navigate = useNavigate(); // Initialize useNavigate
 
     // Function to open modal with selected bottle data
     const openModal = (bottle) => {
@@ -18,6 +22,41 @@ const MerchantBusinessPageSetAddressSectionComponent = () => {
     };
 
     const closeModal = () => setIsModalOpen(false);
+
+    // Function to add items to the cart
+    const addToCart = (bottle, quantity, totalPrice) => {
+        const cartItem = {
+            brand: bottle.brand,
+            weight: bottle.weight,
+            price: totalPrice, // calculated price
+            quantity
+        };
+        setCart([...cart, cartItem]); // Add item to cart
+
+        if (cart.length === 0) {
+            setIsCheckoutEnabled(true); // Enable checkout button when the first item is added
+        }
+    };
+
+    const handleCheckboxChange = (index) => {
+        // Mark the item for removal
+        const updatedCart = [...cart];
+        updatedCart[index].isMarkedForRemoval = true;
+        setCart(updatedCart);
+
+        // Set a timeout to remove the item after a delay (e.g., 2 seconds)
+        setTimeout(() => {
+            setCart(cart.filter((_, i) => i !== index)); // Remove item from cart
+        }, 2000); // Delay of 2 seconds
+    };
+
+    // Function to handle checkout button click
+    const handleCheckout = () => {
+        // Store cart data in localStorage or state management
+        localStorage.setItem('cart', JSON.stringify(cart));
+        navigate('/merchant/BusinessPage/CheckOutPage'); // Navigate to the checkout page
+    };
+
 
     useEffect(() => {
         const fetchData = async () => {
@@ -92,16 +131,51 @@ const MerchantBusinessPageSetAddressSectionComponent = () => {
             </div>
 
             <div className='checkoutbox'>
-                <div className='endbox'>
+                <div className={`endbox ${cart.length > 0 ? 'active' : ''}`} style={{ opacity: cart.length > 0 ? 1 : 0.5 }}>
                     <div className='checkoutbutton'>
-                        <button disabled>Checkout</button>
+                        <button disabled={!isCheckoutEnabled} onClick={handleCheckout}>Checkout</button>
                     </div>
-                    <p>Add items to your cart or basket and they'll appear here.</p>
+
+                    {/*<p>Add items to your cart or basket and they'll appear here.</p>*/}
+
+                    {cart.length === 0 ? (
+                        <p>Add items to your cart or basket and they'll appear here. Click on check box to make them dissapear</p>
+                    ) : (
+                        <p>{cart.length} items added to your cart.</p>
+                    )}
+
                 </div>
-                <div className='cartlist'></div>
+                <div className='cartlist'>
+
+                    {cart.map((item, index) => (
+                        <div className="cart_item" key={index}>
+                            <div className="box_left">
+                                <input
+                                    type="checkbox"
+                                    className="checkbox"
+                                    onChange={() => handleCheckboxChange(index)} // Handle checkbox click
+                                    disabled={item.isMarkedForRemoval} // Disable if already marked for removal
+                                />
+                                <p>{item.brand}</p>
+                            </div>
+                            <div className="box_right">
+                                <p className="task date">X{item.quantity}</p>
+                                <p className="task time">{item.price} XAF</p>
+                            </div>
+                        </div>
+                    ))}
+
+                </div>
             </div>
 
-            {isModalOpen && <MerchantBusinessPageModal closeModal={closeModal} bottle={selectedBottle} />} {/* Pass selected bottle to modal */}
+            {isModalOpen && (
+                <MerchantBusinessPageModal
+                    closeModal={closeModal}
+                    bottle={selectedBottle}
+                    addToCart={addToCart} // Pass addToCart function to modal
+                />
+            )}
+
         </div>
     );
 };

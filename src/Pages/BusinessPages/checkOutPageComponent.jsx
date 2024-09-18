@@ -63,7 +63,7 @@ class CheckOutPageComponent extends Component {
 
                                 <div className="payment-method">
 
-                                    <button className='method selected mtn'>
+                                    <button className='method selected mtn' >
                                         {/*<ion-icon name="card"></ion-icon>*/}
 
                                         <img src={require('../../mobilemoney.png')} alt="mobile money logo" />
@@ -142,7 +142,7 @@ class CheckOutPageComponent extends Component {
                                     <div className="card">
 
                                         <div className="img-box">
-                                            <img src={require('../.././green-tomatoes.jpg')} alt="Green tomatoes" width={80} className="product-img" />
+                                            <img src={require('../.././tradex-gazcrop1.jpg')} alt="Green tomatoes" width={80} className="product-img" />
                                         </div>
 
                                         <div className="detail">
@@ -181,7 +181,7 @@ class CheckOutPageComponent extends Component {
                                     <div className="card">
 
                                         <div className="img-box">
-                                            <img src={require('../.././cabbage.jpg')} alt="Cabbage" width={80} className="product-img" />
+                                            <img src={require('../.././tradex-gazcrop1.jpg')} alt="Cabbage" width={80} className="product-img" />
                                         </div>
 
                                         <div className="detail">
