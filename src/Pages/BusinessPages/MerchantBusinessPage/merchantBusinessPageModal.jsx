@@ -2,12 +2,51 @@ import React, { Component } from 'react';
 import '../../../PagesStyles/BusinessPageStyles/merchantBusinessPageModal.css'
 
 class MerchantBusinessPageModal extends Component {
-    state = {}
+    constructor(props) {
+        super(props);
+        // Initialize state with quantity and total price
+        this.state = {
+            quantity: 1,
+            totalPrice: props.bottle.price
+        };
+    }
+
+
+    // Function to increase the quantity
+    increaseQuantity = () => {
+        this.setState(prevState => {
+            const newQuantity = prevState.quantity + 1;
+            return {
+                quantity: newQuantity,
+                totalPrice: newQuantity * this.props.bottle.price
+            };
+        });
+    };
+
+    // Function to decrease the quantity
+    decreaseQuantity = () => {
+        this.setState(prevState => {
+            if (prevState.quantity > 1) {
+                const newQuantity = prevState.quantity - 1;
+                return {
+                    quantity: newQuantity,
+                    totalPrice: newQuantity * this.props.bottle.price
+                };
+            }
+            return prevState;
+        });
+    };
+
+
+
+
     render() {
 
         const { bottle, closeModal } = this.props; // Destructure bottle from props
+        const { quantity, totalPrice } = this.state;
 
-        console.log('bottleDetails:', bottle);
+        //console.log('bottleDetails:', bottle);
+
         return (
             <div className="modalbackground">
                 <div className='modal'>
@@ -31,15 +70,15 @@ class MerchantBusinessPageModal extends Component {
 
                         <div className='button'>
                             <div className='quantitybox'>
-                                <div className='minus'>
+                                <div className='minus' onClick={this.decreaseQuantity}>
                                     -
                                 </div>
-                                <p>1</p>
-                                <div className='plus'>
+                                <p>{quantity}</p>
+                                <div className='plus' onClick={this.increaseQuantity}>
                                     +
                                 </div>
                             </div>
-                            <button>Add <span>1</span> to cart <span>{bottle.price}</span>fcfa</button>
+                            <button>Add <span>{quantity}</span> to cart <span>{totalPrice}</span>fcfa</button>
                         </div>
                     </div>
 

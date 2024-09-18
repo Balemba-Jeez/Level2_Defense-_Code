@@ -26,9 +26,10 @@
      /*padding-top: 15px;*/
      background-color: white;
      /*padding: 20px;*/
-     /*border-radius: 10px;*/
+     border-radius: 16px;
      max-width: 815.67px;
      width: 100%;
+     padding: 24px 24px 24px;
  }
 
  .modalbackground .modal .modalleft {
@@ -37,9 +38,10 @@
      width: 402px;
      display: flex;
      justify-content: center;
-     border: solid #f3f3f3;
+     border: none;
      background-color: white;
-
+     border-top-left-radius: 16px;
+     border-bottom-left-radius: 16px;
  }
 
  .modalbackground .modal .modalright {
@@ -48,7 +50,10 @@
      width: 402px;
      display: grid;
      align-content: space-between;
-     border: solid #f3f3f3;
+     border: none;
+     border-right-width: 0px;
+     border-top-right-radius: 16px;
+     border-bottom-right-radius: 16px;
  }
 
  .modalbackground .modal .modalleft img {
@@ -69,31 +74,40 @@
      padding-top: 4px;
  }
 
+
  .modalbackground .modal .modalright .text .cancelbutton img {
      width: 28px;
      height: 28px;
      border-radius: 50%;
-     border: solid 2px rgb(232, 232, 232);
      cursor: pointer;
  }
+
+ .modalbackground .modal .modalright .text .cancelbutton img:hover {
+     border: solid 2px rgb(232, 232, 232);
+ }
+
 
  .modalbackground .modal .modalright .text h2 {
      margin: 0;
      font-family: Arial, Helvetica, sans-serif;
-     font-size: 23px;
-     font-weight: 550;
+     font-size: 32px;
+     font-weight: 700;
+     line-height: 70px;
+     margin-top: -20px;
  }
 
  .modalbackground .modal .modalright .text p {
      margin: 0;
      font-family: Arial, Helvetica, sans-serif;
      font-size: 16px;
-     font-weight: normal;
-     line-height: ;
+     /*font-weight: normal;*/
+     font-weight: 700;
+     line-height: 28px;
      margin: 0;
      padding: 0;
-     color: #6B7280;
-
+     /*color: #6B7280;*/
+     color: #5E5E5E;
+     text-transform: uppercase;
  }
 
  .modalbackground .modal .modalright .button {
