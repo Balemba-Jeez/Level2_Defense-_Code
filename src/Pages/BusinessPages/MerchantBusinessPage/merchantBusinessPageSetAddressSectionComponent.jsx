@@ -169,6 +169,7 @@ const MerchantBusinessPageSetAddressSectionComponent = () => {
             </div>
 
             {isModalOpen && (
+
                 <MerchantBusinessPageModal
                     closeModal={closeModal}
                     bottle={selectedBottle}

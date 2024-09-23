@@ -1,0 +1,205 @@
+* {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+
+}
+
+body {
+    background: #ffffff;
+}
+
+/* Main app(merchantDashboard) */
+.header {
+    padding-top: 12px;
+    background: #fff;
+}
+
+.content {
+    margin: 24px 16px;
+    padding: 20px;
+}
+
+.triger-btn {
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+
+
+/* Sider */
+
+.sider {
+    height: 100vh;
+    position: sticky !important;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.logo {
+    color: #4f6f52;
+    margin: 30px 0;
+    font-size: 1.5rem;
+}
+
+
+
+.merchantsidebarheaderlogoitem {
+    border: ;
+    display: flex;
+    width: 154px;
+    height: 44.5333px;
+    color: black;
+    background-color: white;
+    margin-top: 22px;
+    margin-bottom: 30px;
+}
+
+.merchantsidebarheaderlogoitem div:nth-child(1) {
+    border: ;
+    width: 138.43px;
+    height: 44.533px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    margin-top: 0;
+    cursor: pointer;
+    border: ;
+
+}
+
+.merchantsidebarheaderlogoitem div:nth-child(1) img {
+    border: ;
+    height: 44px;
+    width: 44px;
+    margin-top: -8px;
+}
+
+
+.merchantsidebarheaderlogoitem div:nth-child(1) p {
+    border: ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: ;
+    font-size: 130%;
+    letter-spacing: -1px;
+    word-spacing: -2px;
+    width: 98.9px;
+    margin-top: 1.8px;
+    margin-left: -8px;
+
+}
+
+.merchantsidebarheaderlogoitem div:nth-child(1) p span {
+    border: ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 560;
+    font-size: 100%;
+}
+
+.merchantsidebarheaderlogoitem .merchanttext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: ;
+    font-size: 130%;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+    width: 115.43px;
+    height: 24px;
+    margin: 0;
+    margin-left: -101px;
+    padding-top: 20px;
+    border: ;
+}
+
+
+
+
+
+.menu-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.ant-menu-item-selected {
+    background-color: black !important;
+    color: #fff !important;
+}
+
+.menu-bar .ant-menu-item,
+.menu-bar .ant-menu-submenu-title {
+    color: black;
+    /* Set text color to black */
+}
+
+.menu-bar .ant-menu-item:hover,
+.menu-bar .ant-menu-submenu-title:hover {
+    background-color: black !important;
+    /* Set background color on hover */
+    color: #fff !important;
+    /* Keep text color black on hover */
+}
+
+
+/* header */
+.header-icon {
+    background: #d2e3c8;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #4f6f52;
+    cursor: pointer;
+}
+
+/* button, and color */
+.ant-btn:hover {
+    color: #4f6f52 !important;
+    border-color: #4f6f52 !important;
+}
+
+.ant-btn-primary {
+    background-color: #4f6f52;
+}
+
+.ant-btn-primary:hover {
+    background-color: #173a1a !important;
+    color: #fff !important;
+}
+
+.primary--color {
+    color: #4f6f52 !important;
+}
+
+.primary--light--color {
+    color: #739072 !important;
+}
+
+.secondary--color {
+    color: #86a789 !important;
+}
+
+.light--color {
+    color: #d2e3c8 !important;
+}
+
+.gray--color {
+    color: rgb(182, 181, 181) !important;
+}
+
+/* plant(gasBottle) lists */
+.plant-card {
+    flex: 1;
+    height: 250px;
+    text-align: center;
+}
+
+/* Seller List */
+.top-seller,
+.featured-seller {
+    flex: 1;
+}

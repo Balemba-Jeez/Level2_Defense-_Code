@@ -12,7 +12,7 @@ class MerchantSubAppHeaderRightItem extends Component {
         return (
             <div className='merchantsubappheaderightitem'>
                 <div>
-                    <img src='../../submitapplogo.png' alt='Gas Space Logo' />
+                    <img src={require('../../submitapplogo.png')} alt='Gas Space Logo' />
                     <p>Gas <span>Space</span></p>
                 </div>
                 <p className='merchanttext'>for Merchants</p>

@@ -12,7 +12,7 @@ class DeliveryWPHeaderRightItem extends Component {
         return (
             <div className='deliverywpheaderightitem'>
                 <div>
-                    <img src='../../submitapplogo.png' alt='Gas Space Logo' />
+                    <img src={require('../../submitapplogo.png')} alt='Gas Space Logo' />
                     <p>Gas <span>Space</span></p>
                 </div>
                 <p className='deliverytext'>for deliverys</p>

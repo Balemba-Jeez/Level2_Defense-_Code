@@ -2,8 +2,105 @@ import React, { Component } from 'react';
 import '../../PagesStyles/BusinessPageStyles/checkOutPageComponent.css'
 
 class CheckOutPageComponent extends Component {
-    state = {}
+
+    state = {
+        cart: [],
+        deliveryPricing: {},
+        selectedSupplierId: null,
+        selectedPaymentMethod: '', // Track the selected payment method
+    };
+
+    componentDidMount() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        this.setState({ cart });
+
+        // Retrieve delivery pricing from localStorage
+        const deliveryPricing = JSON.parse(localStorage.getItem('deliveryPricing')) || {};
+
+        // Retrieve selected supplier ID from localStorage
+        let selectedSupplierId = localStorage.getItem('selectedSupplierId');
+
+        // Set a fallback value for selectedSupplierId if it's null
+        if (!selectedSupplierId) {
+            selectedSupplierId = '1';  // Default value
+            localStorage.setItem('selectedSupplierId', selectedSupplierId);
+        }
+
+        // Update state with a callback to ensure state is set before logging
+        this.setState({ deliveryPricing, selectedSupplierId }, () => {
+            console.log(`deliveryPricing is`, this.state.deliveryPricing);
+            console.log(`selectedSupplierId is`, this.state.selectedSupplierId);
+
+            // Get the delivery price, ensuring it's a number
+            const selectedSupplierId = this.state.selectedSupplierId;
+            const deliveryPrice = this.state.deliveryPricing[selectedSupplierId]
+                ? parseFloat(this.state.deliveryPricing[selectedSupplierId])
+                : 0;
+
+            console.log(`deliveryPrice is`, deliveryPrice);
+
+            // Update state or apply `toFixed` only if deliveryPrice is a valid number
+            this.setState({ deliveryPrice: deliveryPrice.toFixed(2) }); // Assuming you want 2 decimal places
+        });
+
+    }
+
+
+    handleIncrement = (index) => {
+        const newCart = [...this.state.cart];
+        newCart[index].quantity += 1;
+        this.setState({ cart: newCart }, this.updateLocalStorage);
+    };
+
+
+    handleDecrement = (index) => {
+        const newCart = [...this.state.cart];
+        if (newCart[index].quantity > 1) {
+            newCart[index].quantity -= 1;
+            this.setState({ cart: newCart }, this.updateLocalStorage);
+        }
+    };
+
+
+    handleRemoveItem = (index) => {
+        const newCart = this.state.cart.filter((_, i) => i !== index);
+        this.setState({ cart: newCart }, () => {
+            this.updateLocalStorage();
+            // Reset payment method if the cart is empty
+            if (newCart.length === 0) {
+                this.setState({ selectedPaymentMethod: '' });
+            }
+        });
+    };
+
+    updateLocalStorage = () => {
+        localStorage.setItem('cart', JSON.stringify(this.state.cart));
+    };
+
+    // Handle the payment method selection
+    handlePaymentSelection = (method) => {
+        this.setState({ selectedPaymentMethod: method });
+    };
+
+
     render() {
+
+        const { cart, selectedPaymentMethod } = this.state;
+
+        // Ensure totalAmount is a valid number
+        const totalAmount = cart.reduce((total, item) => total + (item.price * item.quantity), 0) || 0;
+
+        console.log(`deliveryPrice is ${this.state.deliveryPricing[this.state.selectedSupplierId]}`);
+
+        // If the cart is empty, set deliveryPrice to 0
+        const deliveryPrice = cart.length > 0
+            ? parseFloat(this.state.deliveryPricing[this.state.selectedSupplierId]) || 0
+            : 0;
+
+        // Ensure totalWithDelivery is a valid number
+        const totalWithDelivery = (totalAmount + deliveryPrice).toFixed(2);
+
+
         return (
             <>
                 <div className='CheckOutPageheadersection'>
@@ -63,7 +160,13 @@ class CheckOutPageComponent extends Component {
 
                                 <div className="payment-method">
 
-                                    <button className='method selected mtn' >
+                                    {/* Mobile Money Button */}
+                                    <button
+
+                                        className={`method mtn ${selectedPaymentMethod === 'mtn' ? 'selected-mtn' : ''}`}
+                                        onClick={() => this.handlePaymentSelection('mtn')}
+
+                                    >
                                         {/*<ion-icon name="card"></ion-icon>*/}
 
                                         <img src={require('../../mobilemoney.png')} alt="mobile money logo" />
@@ -73,8 +176,13 @@ class CheckOutPageComponent extends Component {
                                         {/*<ion-icon className="checkmark fill" name="checkmark-circle"></ion-icon>*/}
                                     </button>
 
+                                    {/* Orange Money Button */}
+                                    <button
 
-                                    <button className='method orang'>
+                                        className={`method orang ${selectedPaymentMethod === 'orange' ? 'selected-orange' : ''}`}
+                                        onClick={() => this.handlePaymentSelection('orange')}
+
+                                    >
                                         {/*<ion-icon name="logo-paypal"></ion-icon>*/}
 
                                         <img src={require('../../OrangeMoneymainlogo.jpg')} alt="Orange money logo" />
@@ -94,35 +202,11 @@ class CheckOutPageComponent extends Component {
                                         <input type="number" id='cardholder-name' name='cardholder-name' className="input-default" />
                                     </div>
 
-                                    {/*<div className="card-number">
-                                        <label htmlFor="card-number" className="label-default">Card number</label>
 
-                                        <input type="number" id='card-number' name='card-number' className="input-default" />
-                                    </div>
-
-                                    <div className="input-flex">
-
-                                        <div className="expire-date">
-                                            <label htmlFor="expire-date" className="label-default">Expiration date</label>
-
-                                            <div className="input-flex">
-
-                                                <input type="number" name="day" id="expire-date" placeholder='31' minLength={1} maxLength={31} className="input-default" />
-                                                /
-                                                <input type="number" name="month" id="expire-date" placeholder='12' minLength={1} maxLength={12} className="input-default" />
-                                            </div>
-                                        </div>
-
-                                        <div className="cvv">
-                                            <label htmlFor="cvv" className="label-default">CVV</label>
-
-                                            <input type="number" id='cvv' name='cvv' className="input-default" />
-                                        </div>
-                                    </div>*/}
                                 </form>
                             </div>
                             <button className='btn btn-primary'>
-                                <b>Pay</b> XAF <span id='payAmount'>2.15</span>
+                                <b>Pay</b> XAF <span id='payAmount'>{totalWithDelivery}</span>
                             </button>
 
                         </section>
@@ -135,107 +219,65 @@ class CheckOutPageComponent extends Component {
 
                             <div className="cart-item-box">
 
-                                <h2 className="section-heading">Order Summary</h2>
-
-                                <div className="product-card">
-
-                                    <div className="card">
-
-                                        <div className="img-box">
-                                            <img src={require('../.././tradex-gazcrop1.jpg')} alt="Green tomatoes" width={80} className="product-img" />
-                                        </div>
-
-                                        <div className="detail">
-
-                                            <h4 className="product-name">Green Tomatoes 1 kilo</h4>
-
-                                            <div className="wrapper">
+                                <h2 className="section-heading">Your items</h2>
 
 
-                                                <div className="product-qty">
-                                                    <button id="decrement">
-                                                        <ion-icon name="remove-outline"></ion-icon>
-                                                    </button>
+                                {cart.length > 0 ? (
+                                    cart.map((item, index) => (
+                                        <div className="product-card" key={index}>
+                                            <div className="card">
+                                                <div className="img-box">
+                                                    <img src={require('../.././tradex-gazcrop1.jpg')} alt={item.brand} width={80} className="product-img" />
+                                                </div>
+                                                <div className="detail">
+                                                    <h4 className="product-name">{item.brand}</h4>
+                                                    <div className="wrapper">
+                                                        <div className="product-qty">
 
-                                                    <span id="quantity">1</span>
+                                                            <button onClick={() => this.handleDecrement(index)} id="decrement">
 
-                                                    <button id="increment">
-                                                        <ion-icon name="add-outline"></ion-icon>
-                                                    </button>
+                                                                <ion-icon name="remove-outline"></ion-icon>
+
+                                                            </button>
+
+                                                            <span id="quantity">{item.quantity}</span>
+
+                                                            <button onClick={() => this.handleIncrement(index)} id="increment">
+
+                                                                <ion-icon name="add-outline"></ion-icon>
+
+                                                            </button>
+                                                        </div>
+                                                        <div className="price">
+                                                            XAF <span id="price">{(item.price * item.quantity).toFixed(2)}</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
-                                                <div className="price">
-                                                    $ <span id="price">1.25</span>
-                                                </div>
+                                                <button className="product-close-btn" onClick={() => this.handleRemoveItem(index)}>
+
+                                                    <ion-icon name="close-outline"></ion-icon>
+
+                                                </button>
+
                                             </div>
                                         </div>
+                                    ))
+                                ) : (
+                                    <p id='emptynotification'>Your cart is empty.</p>
+                                )}
 
-                                        <button className="product-close-btn">
-                                            <ion-icon name="close-outline"></ion-icon>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div className="product-card">
-
-                                    <div className="card">
-
-                                        <div className="img-box">
-                                            <img src={require('../.././tradex-gazcrop1.jpg')} alt="Cabbage" width={80} className="product-img" />
-                                        </div>
-
-                                        <div className="detail">
-
-                                            <h4 className="product-name">Cabbage 1 Pcs</h4>
-
-                                            <div className="wrapper">
-
-
-                                                <div className="product-qty">
-                                                    <button id="decrement">
-                                                        <ion-icon name="remove-outline"></ion-icon>
-                                                    </button>
-
-                                                    <span id="quantity">1</span>
-
-                                                    <button id="increment">
-                                                        <ion-icon name="add-outline"></ion-icon>
-                                                    </button>
-                                                </div>
-
-                                                <div className="price">
-                                                    $ <span id="price">0.80</span>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <button className="product-close-btn">
-                                            <ion-icon name="close-outline"></ion-icon>
-                                        </button>
-                                    </div>
-                                </div>
 
                             </div>
 
                             <div className="wrapper">
 
-                                {/*<div className="discount-token">
-
-                                    <label htmlFor="token" className="label-default">Gift card/Discount code</label>
-
-                                    <div className="wrapper-flex">
-
-                                        <input type="text" name="discount-token" id="discount-token" className="input-default" />
-
-                                        <button className="btn btn-outline">Apply</button>
-                                    </div>
-                                </div>*/}
 
                                 <div className="amount">
                                     <h6>Order total</h6>
                                     <div className='totaldetails'>
                                         <div className="subtotal">
-                                            <span>Subtotal</span> <span>XAF <span id="subtotal">2.05</span></span>
+                                            <span>Subtotal</span> <span>XAF <span id="subtotal">{totalAmount.toFixed(2)}</span></span>
                                         </div>
 
                                         {/*<div className="tax">
@@ -243,11 +285,11 @@ class CheckOutPageComponent extends Component {
                                     </div>*/}
 
                                         <div className="shipping">
-                                            <span>Delivery</span> <span>XAF <span id="shipping">2.05</span></span>
+                                            <span>Delivery</span> <span>XAF <span id="shipping">{deliveryPrice.toFixed(2)}</span></span>
                                         </div>
                                     </div>
                                     <div className="total">
-                                        <span>Total</span> <span>XAF <span id="subtotal">2.15</span></span>
+                                        <span>Total</span> <span>XAF <span id="subtotal">{totalWithDelivery}</span></span>
                                     </div>
                                 </div>
                             </div>

@@ -1,0 +1,228 @@
+{/*import React, { Component } from 'react';
+import '../../../PagesStyles/BusinessPageStyles/merchantBusinessPageSetAddressSectionComponent.css';
+import MerchantBusinessPageModal from './merchantBusinessPageModal';
+import axios from 'axios';
+
+
+class MerchantBusinessPageSetAddressSectionComponent extends Component {
+    state = {
+        isModalOpen: false, // state to track if the modal is open
+        supplierBottles: [], // State to hold bottles data
+        supplierDetails: {} // State to hold supplier details
+    };
+
+    openModal = () => {
+        this.setState({ isModalOpen: true }); //Opens Modal
+    };
+
+    closeModal = () => {
+        this.setState({ isModalOpen: false }); //Closes Modal
+    };
+
+
+    async componentDidMount() {
+        const { supplierID } = this.props.match.params; // // Access supplierID from props
+
+        try {
+            // Fetch supplier details
+            const supplierResponse = await axios.get(`http://localhost:4000/api/Supplier/${supplierID}`);
+            this.setState({ supplierDetails: supplierResponse.data });
+
+            // Fetch bottles for the supplier
+            const bottlesResponse = await axios.get(`http://localhost:4000/api/Bottles/${supplierID}`);
+            this.setState({ supplierBottles: bottlesResponse.data });
+
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    }
+
+
+
+
+    render() {
+
+        const { supplierBottles, supplierDetails, isModalOpen } = this.state;
+
+        return (
+
+            <div className='merchantbusinesspagesetaddresssectioncomponent'>
+                <div className='aboutsection'>
+
+                    <div className='abouttext'>
+
+                        <h1>{supplierDetails.firstName || 'Gas Connect'}</ h1>
+                        <p>
+                            {supplierDetails.storeDescription || 'Gas Connect delivers quality gas bottles swiftly and reliably, ensuring your home or business stays powered.'}
+                        </p>
+                    </div>
+
+                    <div className='aboutimage'>
+                        <img src={require('../../../istockphoto3.jpg')} alt="store image" />
+                    </div>
+                </div>
+
+                <div className='items'>
+                    <p>Menu</p>
+
+                    <div className='itemelements'>
+                        {supplierBottles.map((bottle) => (
+                            <div className='itemelement' key={bottle.id} onClick={this.openModal}>
+                                <div className='leftside'>
+                                    <div className='leftsidetext'>
+                                        <p>{bottle.brand},</p>
+                                        <p>{bottle.weight} kg</p>
+                                    </div>
+                                    <p>{bottle.price} XAF</p>
+                                </div>
+                                <div className='rightside'>
+                                    <img src={require('../../../tradex-gazcrop1.jpg')} alt="" />
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                </div>
+
+                <div className='checkoutbox'>
+                    <div className='endbox'>
+                        <div className='checkoutbutton'>
+                            <button disabled>Checkout</button>
+                        </div>
+                        <p>Add items to your cart or basket and they'll appear here. </p>
+                    </div>
+                    <div className='cartlist'></div>
+                </div>
+
+                {this.state.isModalOpen && <MerchantBusinessPageModal closeModal={this.closeModal} />} {/* Render modal if state is true 
+
+            </div>
+
+        );
+    }
+}
+
+export default MerchantBusinessPageSetAddressSectionComponent;*/}
+
+
+//Cart list
+{/*
+                    <div className="cart_item">
+
+                        <div className="box_left">
+                            <input type="checkbox" className="checkbox" />
+                            <p>Afrique </p>
+                        </div>
+
+                        <div className="box_right">
+                            <p className="task date ">X10</p>
+                            <p className="task time">150000 XAF</p>
+                        </div>
+                    </div>*/}
+
+
+
+                                                        {/*<div className="card-number">
+                                        <label htmlFor="card-number" className="label-default">Card number</label>
+
+                                        <input type="number" id='card-number' name='card-number' className="input-default" />
+                                    </div>
+
+                                    <div className="input-flex">
+
+                                        <div className="expire-date">
+                                            <label htmlFor="expire-date" className="label-default">Expiration date</label>
+
+                                            <div className="input-flex">
+
+                                                <input type="number" name="day" id="expire-date" placeholder='31' minLength={1} maxLength={31} className="input-default" />
+                                                /
+                                                <input type="number" name="month" id="expire-date" placeholder='12' minLength={1} maxLength={12} className="input-default" />
+                                            </div>
+                                        </div>
+
+                                        <div className="cvv">
+                                            <label htmlFor="cvv" className="label-default">CVV</label>
+
+                                            <input type="number" id='cvv' name='cvv' className="input-default" />
+                                        </div>
+                                    </div>*/}
+
+
+                                                                    <div className="product-card">
+
+                                    <div className="card">
+
+                                        <div className="img-box">
+                                            <img src={require('../.././tradex-gazcrop1.jpg')} alt="Green tomatoes" width={80} className="product-img" />
+                                        </div>
+
+                                        <div className="detail">
+
+                                            <h4 className="product-name">Green Tomatoes 1 kilo</h4>
+
+                                            <div className="wrapper">
+
+
+                                                <div className="product-qty">
+                                                    <button id="decrement">
+                                                        <ion-icon name="remove-outline"></ion-icon>
+                                                    </button>
+
+                                                    <span id="quantity">1</span>
+
+                                                    <button id="increment">
+                                                        <ion-icon name="add-outline"></ion-icon>
+                                                    </button>
+                                                </div>
+
+                                                <div className="price">
+                                                    $ <span id="price">1.25</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button className="product-close-btn">
+                                            <ion-icon name="close-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div className="product-card">
+
+                                    <div className="card">
+
+                                        <div className="img-box">
+                                            <img src={require('../.././tradex-gazcrop1.jpg')} alt="Cabbage" width={80} className="product-img" />
+                                        </div>
+
+                                        <div className="detail">
+
+                                            <h4 className="product-name">Cabbage 1 Pcs</h4>
+
+                                            <div className="wrapper">
+
+
+                                                <div className="product-qty">
+                                                    <button id="decrement">
+                                                        <ion-icon name="remove-outline"></ion-icon>
+                                                    </button>
+
+                                                    <span id="quantity">1</span>
+
+                                                    <button id="increment">
+                                                        <ion-icon name="add-outline"></ion-icon>
+                                                    </button>
+                                                </div>
+
+                                                <div className="price">
+                                                    $ <span id="price">0.80</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button className="product-close-btn">
+                                            <ion-icon name="close-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>

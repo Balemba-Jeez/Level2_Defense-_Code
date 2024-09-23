@@ -78,6 +78,17 @@ class HomeScreenSizeSectionComponent extends Component {
             this.setState({ suppliers: uniqueSuppliers });  // Update state with unique suppliers
 
             console.log('Unique Suppliers:', uniqueSuppliers);  // Log unique suppliers
+
+            // Save delivery pricing of suppliers to localStorage
+            const deliveryPricing = uniqueSuppliers.reduce((pricing, supplier) => {
+                pricing[supplier.ID] = supplier.deliveryPricing;
+                return pricing;
+            }, {});
+
+            console.log(`suplier delivery pricing is ${JSON.stringify(deliveryPricing)}`)
+            localStorage.setItem('deliveryPricing', JSON.stringify(deliveryPricing));
+
+
         } catch (error) {
             console.error('Error fetching suppliers:', error);
         }

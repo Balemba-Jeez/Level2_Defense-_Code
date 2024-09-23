@@ -19,18 +19,35 @@ import MerchantBusinessPage from './Pages/BusinessPages/MerchantBusinessPage/mer
 import MerchantBusinessPageModal from './Pages/BusinessPages/MerchantBusinessPage/merchantBusinessPageModal.jsx';
 import CheckOutPageComponent from './Pages/BusinessPages/checkOutPageComponent.jsx';
 import MerchantBusinessPageSetAddressSectionComponent from './Pages/BusinessPages/MerchantBusinessPage/merchantBusinessPageSetAddressSectionComponent.jsx';
+import MerchantHomePageDashboard from './Pages/Merchant/merchantHomePageDashboard.jsx';
+import MerchantAddItemModal from './Pages/Merchant/merchantAddItemModal.jsx';
+import DeliveryHomePageDashboard from './Pages/Delivery/deliveryHomePageDashboard.jsx';
+import DeliveryAddItemModal from './Pages/Delivery/deliveryAddItemModal.jsx';
+
 const router = createBrowserRouter([
   {
     path: '/client',
     element: <ClientWelcomPage />
   },
   {
+    path: '/client/homepage',
+    element: <ClientHomePage />
+  },
+  {
     path: '/merchant',
     element: <MerchantWelcomePage />
   },
   {
-    path: '/client/homepage',
-    element: <ClientHomePage />
+    path: '/merchant/homepage',
+    element: <MerchantHomePageDashboard />
+  },
+  {
+    path: '/merchant/homepage/dashboard',
+    element: <MerchantHomePageDashboard />
+  },
+  {
+    path: '/merchant/homepage/dashboard/addItem',
+    element: <MerchantAddItemModal />
   },
   {
     path: '/merchant/submitapplication',
@@ -47,6 +64,14 @@ const router = createBrowserRouter([
   {
     path: '/delivery',
     element: <DeliveryPersonWelcomePage />
+  },
+    {
+    path: '/delivery/homepage/dashboard',
+    element: <DeliveryHomePageDashboard />
+  },
+    {
+    path: '/delivery/homepage/dashboard/addItem',
+    element: <DeliveryAddItemModal />
   },
   {
     path: '/delivery/submitapplication',

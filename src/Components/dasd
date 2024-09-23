@@ -1,0 +1,340 @@
+                <div className='aside_optionlist'>
+                    <ul>
+                        <li>Add your gas business</li>
+                        <li>Sign up to deliver</li>
+                    </ul>
+                </div>
+
+                <a>Log in</a>
+                    flex-direction: column;
+                    gap: ;
+                    padding: 24px;
+                    display: flex;
+
+                 .header_rightitem div:nth-child(1) button:hover {
+                    background-color: rgb(197, 53, 53);
+                    padding: ;
+                    }
+
+                    {/*
+                    <AsideComponent />*/}
+
+                        border-width: 0px;
+                        border-style: solid;
+
+///////
+                        width: 66.367px;
+                        height: 20px;
+                        border: hidden;
+                        border-radius: 500px 500px 500px 500px;
+                        margin-top: 10px;
+                        padding-top: 4%;
+                        padding-bottom: 5%;
+                        padding-left: 4%;
+                        padding-right: 4%;
+                        background-color: rgb(243, 243, 243);
+                        font-size: 90%;
+                        font-weight: 600;
+                        
+                        text-decoration: none;
+                        text-align: center;
+                        }
+                        
+                        .header_leftitem .Signup {
+                        background-color: black;
+                        color: white;
+                        }
+                        
+                        
+                        
+                        .header_leftitem .Signup:hover {
+                        background-color: #282828;
+                        cursor: pointer;
+                        }
+
+                        ./////
+                                            <ol>
+                                                <div></div>
+                                                <li>Tongolo</li>
+                                                <li>Cite' Vert</li>
+                                                <li>Mangier</li>
+                                                <li>Mvan</li>
+                                                <li>Auwei</li>
+                                                <li>Mokolo</li>
+                                                <li>Dacar</li>
+                                                <li>Dacar</li>
+                                                <li>Dacar</li>
+                                                <li>Dacar</li>
+                                                <li>Dacar</li>
+                                            </ol>
+
+                                            <img src="GETITONGooglePlay.jpeg" alt="GET IT ON Google Play image" />
+
+                                                                                <th colSpan={"2"}>ENG :</th>
+                                                                                <th>FR :</th>
+
+                                                                                <tr>
+                                                                                    <td></td>
+                                                                                    <td>
+                                                                                        <img src="languageicon.png" alt="Translate icon" />
+                                                                                        <p>English</p>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                border-top: #33983d 1px solid;
+                                                                                padding-top: 40px;
+
+                                                                                /////routes
+
+                                            import HeaderComponent from './Components/headerComponent';
+                                            import AsideComponent from './Components/asideComponent';
+                                            import AddressInputComponent from './Components/addressInputComponent';
+                                            import OrderDeliveryComponent from './Components/orderDeliveryComponent';
+                                            import SetAddressSectionComponent from './Components/setAddressSectionComponent';
+                                            import WelcomeScreenSizeSectionComponent from './Components/welcomeScreenSizeSectionComponent';
+                                            import BusinessBenefitsSectionComponent from './Components/businessBenefitsSectionComponent';
+                                            import WelcomeOverScreenSizeSectionComponent from './Components/welcomeOverScreenSizeSection'
+                                            import FooterComponent from './Components/footerComponent';
+                                            
+                                            ///\\\
+                                            {/*
+                                            <HeaderComponent />*/}
+                                            {/*
+                                            <AsideComponent />*/}
+                                            {/*
+                                            <AddressInputComponent />*/}
+                                            {/*
+                                            <OrderDeliveryComponent />*/}
+                                            {/*
+                                            <SetAddressSectionComponent />*/}
+                                            {/*
+                                            <BusinessBenefitsSectionComponent />*/}
+                                            <WelcomeScreenSizeSectionComponent />
+                                            <WelcomeOverScreenSizeSectionComponent />
+                                            <FooterComponent />
+
+                                            {/*src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=en&amp;q=Mballa2,%20Yaound%C3%A9,%20Cameroon+(My%20Business%20Name)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"*/}
+
+
+                                    <p>{supplier.storeName}, 
+                                        
+                                        {supplier.address}
+                                        
+                                    </p>
+
+
+                                            <a href="/Merchant/BusinessPage">
+                        <div className='gasstoreboard'>
+                            <div className='gasstoreboardimage'>
+                                <img src={require('../../demosupplierimage.jpg')} alt="storeimage" />
+                                {/*<span>Currently unavailable</span>*/}
+                            </div>
+                            <div className='gasstoreboardimagetext'>
+
+                                <p>Bethel Gaz, Manguier</p>
+                                <div>4.5</div>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div className='gasstoreboard'>
+                            <div className='gasstoreboardimage'>
+                                <img src={require('../../demosupplierimage.jpg')} alt="storeimage" />
+                                {/*<span>Currently unavailable</span>*/}
+                            </div>
+                            <div className='gasstoreboardimagetext'>
+
+                                <p>Bethel Gaz, Manguier</p>
+                                <div>4.5</div>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div className='gasstoreboard'>
+                            <div className='gasstoreboardimage'>
+                                <img src={require('../../demosupplierimage.jpg')} alt="storeimage" />
+                                {/*<span>Currently unavailable</span>*/}
+                            </div>
+                            <div className='gasstoreboardimagetext'>
+
+                                <p>Bethel Gaz, Manguier</p>
+                                <div>4.5</div>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div className='gasstoreboard'>
+                            <div className='gasstoreboardimage'>
+                                <img src={require('../../demosupplierimage.jpg')} alt="storeimage" />
+                                {/*<span>Currently unavailable</span>*/}
+                            </div>
+                            <div className='gasstoreboardimagetext'>
+
+                                <p>Bethel Gaz, Manguier</p>
+                                <div>4.5</div>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div className='gasstoreboard'>
+                            <div className='gasstoreboardimage'>
+                                <img src={require('../../demosupplierimage.jpg')} alt="storeimage" />
+                                {/*<span>Currently unavailable</span>*/}
+                            </div>
+                            <div className='gasstoreboardimagetext'>
+
+                                <p>Bethel Gaz, Manguier</p>
+                                <div>4.5</div>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div className='gasstoreboard'>
+                            <div className='gasstoreboardimage'>
+                                <img src={require('../../demosupplierimage.jpg')} alt="storeimage" />
+                                {/*<span>Currently unavailable</span>*/}
+                            </div>
+                            <div className='gasstoreboardimagetext'>
+
+                                <p>Bethel Gaz, Manguier</p>
+                                <div>4.5</div>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div className='gasstoreboard'>
+                            <div className='gasstoreboardimage'>
+                                <img src={require('../../demosupplierimage.jpg')} alt="storeimage" />
+                                {/*<span>Currently unavailable</span>*/}
+                            </div>
+                            <div className='gasstoreboardimagetext'>
+
+                                <p>Bethel Gaz, Manguier</p>
+                                <div>4.5</div>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div className='gasstoreboard'>
+                            <div className='gasstoreboardimage'>
+                                <img src={require('../../demosupplierimage.jpg')} alt="storeimage" />
+                                {/*<span>Currently unavailable</span>*/}
+                            </div>
+                            <div className='gasstoreboardimagetext'>
+
+                                <p>Bethel Gaz, Manguier</p>
+                                <div>4.5</div>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div className='gasstoreboard'>
+                            <div className='gasstoreboardimage'>
+                                <img src={require('../../demosupplierimage.jpg')} alt="storeimage" />
+                                {/*<span>Currently unavailable</span>*/}
+                            </div>
+                            <div className='gasstoreboardimagetext'>
+
+                                <p>Bethel Gaz, Manguier</p>
+                                <div>4.5</div>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div className='gasstoreboard'>
+                            <div className='gasstoreboardimage'>
+                                <img src={require('../../demosupplierimage.jpg')} alt="storeimage" />
+                                {/*<span>Currently unavailable</span>*/}
+                            </div>
+                            <div className='gasstoreboardimagetext'>
+
+                                <p>Bethel Gaz, Manguier</p>
+                                <div>4.5</div>
+
+                            </div>
+                        </div>
+                    </a>
+
+
+
+
+    <div className='itemelements'>
+                        <div className='itemelement' onClick={this.openModal}> {/* Attach click event */}
+                            <div className='leftside'>
+                                <div className='leftsidetext'>
+                                    <p>Tradex,</p>
+                                    <p>12 kg</p>
+                                </div>
+                                <p>6500 fcfa</p>
+                            </div>
+
+                            <div className='rightside'>
+                                <img src={require('../../../tradex-gazcrop1.jpg')} alt="" />
+
+                            </div>
+                        </div>
+
+                        <div className='itemelement'>
+                            <div className='leftside'>
+                                <div className='leftsidetext'>
+                                    <p>Tradex,</p>
+                                    <p>12 kg</p>
+                                </div>
+                                <p>6500 fcfa</p>
+                            </div>
+
+                            <div className='rightside'>
+                                <img src={require('../../../tradex-gazcrop1.jpg')} alt="" />
+
+                            </div>
+                        </div>
+
+                        <div className='itemelement'>
+                            <div className='leftside'>
+                                <div className='leftsidetext'>
+                                    <p>Tradex,</p>
+                                    <p>12 kg</p>
+                                </div>
+                                <p>6500 fcfa</p>
+                            </div>
+
+                            <div className='rightside'>
+                                <img src={require('../../../tradex-gazcrop1.jpg')} alt="" />
+
+                            </div>
+                        </div>
+
+                        <div className='itemelement'>
+                            <div className='leftside'>
+                                <div className='leftsidetext'>
+                                    <p>Tradex,</p>
+                                    <p>12 kg</p>
+                                </div>
+                                <p>6500 fcfa</p>
+                            </div>
+
+                            <div className='rightside'>
+                                <img src={require('../../../tradex-gazcrop1.jpg')} alt="" />
+
+                            </div>
+                        </div>
+
+                    </div>

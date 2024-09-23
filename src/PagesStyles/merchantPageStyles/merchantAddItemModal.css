@@ -1,0 +1,322 @@
+.AddItemformpage {
+    border: solid 1px #E2E2E2;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 395px;
+    margin-top: 34px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    width: 620.667px;
+    margin-bottom: 34px;
+}
+
+
+.AddItemformpage .AddItemformppageheader {
+    border: none;
+    background-color: black;
+    height: ;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+.AddItemformpage .AddItemformppageheader .AddItemformppageheaderleft {
+    border: ;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 0px 14px;
+
+}
+
+.AddItemformpage .AddItemformppageheader .AddItemformppageheaderleft button img {
+    border: none;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.AddItemformpage .AddItemformppageheader .AddItemformppageheaderleft button {
+    border: none;
+    background-color: black;
+    cursor: pointer;
+    padding: 10px;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    transition-duration: 200ms;
+    border-radius: 50%;
+}
+
+.AddItemformpage .AddItemformppageheader .AddItemformppageheaderleft button:hover {
+    background-color: #333333;
+}
+
+.AddItemformpage .AddItemformppagebody {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.AddItemformpage .AddItemformppagebody .AddItemformpagetext {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.AddItemformpage .AddItemformppagebody .AddItemformpagetext h3 {
+    border: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+/*.AddItemformpage .AddItemformppagebody .AddItemformpagetext p {
+    border: ;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgb(50, 49, 49);
+}*/
+
+/*.AddItemformpage .AddItemformppagebody .AddItemformpagelist {
+    border: none;
+
+}
+
+.AddItemformpage .AddItemformppagebody .AddItemformpagelist ol {
+    margin-top: 0px;
+    padding-left: 16px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: #6a6a6a;
+}
+
+.AddItemformpage .AddItemformppagebody .AddItemformpagelist ol li {
+    height: 22px;
+}*/
+
+
+.AddItemformpage .AddItemformppagebody .AddItemformppageinputselect .AddItemformpageinput {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 249.2px;
+    height: 329.2px;
+
+}
+
+.AddItemformpage .AddItemformppagebody .AddItemformppageinputselect .AddItemformpageinput .AddItemformpageinputimage {
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    background-color: white;
+
+}
+
+.AddItemformpage .AddItemformppagebody .AddItemformppageinputselect .AddItemformpageinput .AddItemformpageinputimage img {
+    border: none;
+    width: 329.198px;
+    height: 329.198px;
+    object-fit: contain;
+}
+
+
+
+.AddItemformpage .AddItemformppagebody .AddItemformppageinputselect .AddItemformpageselect .AddItemformpageinputbutton {
+    border: none;
+    background-color: rgb(243, 243, 243);
+    display: inline-block;
+    border-radius: 8px;
+    transition-duration: 200ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    /*margin-left: 130px;*/
+    width: 299.198px;
+    height:
+        /*18px*/
+        auto;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 118px;
+}
+
+.AddItemformpage .AddItemformppagebody .AddItemformppageinputselect .AddItemformpageinputbutton:hover {
+    background-color: rgb(221, 221, 221);
+    cursor: pointer;
+    border: none;
+}
+
+.AddItemformpage .AddItemformppagebody .AddItemformppageinputselect .AddItemformpageselect .AddItemformpageinputbutton .firstchild {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+}
+
+.AddItemformpage .AddItemformppagebody .AddItemformppageinputselect .AddItemformpageselect .AddItemformpageinputbutton .firstchild label {
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 5px;
+}
+
+.AddItemformpage .AddItemformppagebody .AddItemformppageinputselect .AddItemformpageselect .AddItemformpageinputbutton .firstchild label span {
+    border: none;
+    word-spacing: 0px;
+}
+
+.AddItemformpage .AddItemformppagebody .AddItemformppageinputselect .AddItemformpageselect .AddItemformpageinputbutton .firstchild label img {
+    border: none;
+    width: 18px;
+    height: 18px;
+}
+
+.AddItemformpage .AddItemformppagebody .AddItemformppageinputselect .AddItemformpageselect .AddItemformpageinputbutton .firstchild input[type=file] {
+    border: ;
+    display: none;
+}
+
+.AddItemformpage .AddItemformppagefooter {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    background-color: rgb(221, 221, 221);
+}
+
+.AddItemformpage .AddItemformppagefooter button {
+    border: solid pink;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition-property: background-color, border-radius;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+.AddItemformpage .AddItemformppagefooter button:hover {
+    background-color: #282828;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+}
+
+
+
+.AddItemformpage .AddItemformppageinputselect .AddItemformpageselect {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.AddItemformpage .AddItemformppageinputselect .AddItemformpageselect .selectitembox {
+    border: none;
+    width: 299.198px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(243, 243, 243);
+}
+
+.AddItemformpage .AddItemformppageinputselect .AddItemformpageselect .selectitembox:hover {
+    background-color: rgb(221, 221, 221);
+    cursor: pointer;
+    border: none;
+}
+
+
+.AddItemformpage .AddItemformppageinputselect .AddItemformpageselect .selectitembox label {
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.AddItemformpage .AddItemformppageinputselect .AddItemformpageselect .selectitembox label img {
+    border: none;
+    width: 18px;
+    height: 18px;
+}
+
+
+.AddItemformpage .AddItemformppageinputselect .AddItemformpageselect .selectitembox select {
+    /*border: solid 2px #f3f3f3;*/
+    border: none;
+    /*background-color: #f3f3f3;*/
+    /*background-color: #eeeeee;*/
+    background-color: inherit;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    border-radius: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    transition-property: background-color, border;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.2, 0.8, 0.4, 1);
+    cursor: pointer;
+    color: black;
+}
+
+
+
+.AddItemformpage .AddItemformppageinputselect .AddItemformpageselect .selectitembox select:focus {
+    border: solid 1px black;
+    background-color: white;
+    outline: none;
+}
+
+.AddItemformppageinputselect {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 40px;
+
+}

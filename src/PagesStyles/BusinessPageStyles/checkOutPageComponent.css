@@ -341,6 +341,20 @@ input[type=number] {
     outline: none;
 }
 
+/* Mobile Money Selected */
+.method.selected-mtn {
+    border: 2px solid #f3be10;
+    /* Persistent yellow border for MTN */
+}
+
+/* Orange Money Selected */
+.method.selected-orange {
+    border: 2px solid #ff7900;
+    /* Persistent orange border for Orange Money */
+}
+
+
+
 /*.payment-method .selected {
     border-color: var(--azure);
 }*/
@@ -555,11 +569,20 @@ ion-icon[name="checkmark-circle"] {
 
 .card .product-img {
     border-radius: var(--radius);
+    padding-top: 18px;
+}
+
+.card .detail {
+    padding-bottom: 75px;
+    padding-left: 42px;
 }
 
 .card .detail .product-name {
     font-weight: var(--fw-6);
-    font-size: var(--fs-15);
+    /*font-size: var(--fs-15);*/
+    font-size: 18px;
+    font-family: "Gill Sans", sans-serif;
+    letter-spacing: -1px;
     color: var(--dim-gray);
     margin-bottom: 10px;
 }
