@@ -15,7 +15,7 @@ function DeliveryHomePageDashboard() {
 
                 <div className='deliveryhpdashboarditem'>
                     <div>
-                        <img src={require('../../submitapplogo.png')} alt='Gas Space Logo' />
+                        <img src={require('../../gas-cylinder11.png')} alt='Gas Space Logo' />
                         <p>Gas <span>Space</span></p>
                     </div>
                     <p className='deliverytext'>for deliverys</p>
@@ -301,7 +301,7 @@ function DeliveryHomePageDashboard() {
 
 
                 {/* <!-- PRODUCTS --> */}
-                <main>
+                <main style={{ display: 'none' }}>
                     <div className="head-title">
                         <div className="left">
                             <h1>Products</h1>
@@ -427,7 +427,7 @@ function DeliveryHomePageDashboard() {
 
 
                 {/* <!-- Orders --> */}
-                <main>
+                <main style={{ display: 'none' }}>
                     <div className="head-title">
                         <div className="left">
                             <h1>Orders</h1>

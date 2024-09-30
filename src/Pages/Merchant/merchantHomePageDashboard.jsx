@@ -301,7 +301,7 @@ function MerchantHomePageDashboard() {
 
 
                 {/* <!-- PRODUCTS --> */}
-                <main>
+                <main style={{ display: 'none' }}>
                     <div className="head-title">
                         <div className="left">
                             <h1>Products</h1>
@@ -427,7 +427,7 @@ function MerchantHomePageDashboard() {
 
 
                 {/* <!-- Orders --> */}
-                <main>
+                <main style={{ display: 'none' }}>
                     <div className="head-title">
                         <div className="left">
                             <h1>Orders</h1>
