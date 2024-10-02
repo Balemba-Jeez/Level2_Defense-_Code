@@ -1,0 +1,132 @@
+.confirmPageModalBackground {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.confirmPageModalBackground .confirmPageModal {
+    border: solid 1px #bbc1bf;
+    width: 354px;
+    height: 415.334px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    border-radius: 5px;
+}
+
+.confirmPageModalBackground .confirmPageModal .head {
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    /*background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+    background-blend-mode: multiply;*/
+
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+    background-blend-mode: multiply, multiply;
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    /*padding: 12px;*/
+}
+
+
+
+
+.confirmPageModalBackground .confirmPageModal .head p {
+    font-family: "Barlow", sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.confirmPageModalBackground .confirmPageModal .tail {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 76px;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+
+}
+
+
+
+.confirmPageModalBackground .confirmPageModal .tail p {
+    font-family: "Barlow", sans-serif;
+    line-height: 20px;
+    font-size: small;
+    color: #6a6a6a;
+}
+
+
+.confirmPageModalBackground .confirmPageModal .tail p span:nth-child(1) {
+    font-weight: 400;
+    font-size: 15px;
+    color: black;
+}
+
+.confirmPageModalBackground .confirmPageModal .tail p span:nth-child(1) span {
+    font-weight: 550;
+}
+
+.confirmPageModalBackground .confirmPageModal .buttons {
+    border: none;
+    font-family: "Barlow", sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4px;
+    margin-top: 16px;
+}
+
+.confirmPageModalBackground .confirmPageModal .buttons button {
+    color: white;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 8px;
+    border: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 30%;
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.confirmPageModalBackground .confirmPageModal .buttons .btn:hover {
+    background-color: #282828;
+    cursor: pointer;
+}
+
+.confirmPageModalBackground .confirmPageModal .buttons .cancel {
+    background-color: initial;
+    color: black;
+    border: solid 1.5px rgb(148, 145, 145);
+    width: 23%;
+    /*height: 48px;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.confirmPageModalBackground .confirmPageModal .buttons .cancel:hover {
+    background-color: #f3f3f3;
+    cursor: pointer;
+}

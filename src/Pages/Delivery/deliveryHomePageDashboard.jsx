@@ -4,7 +4,7 @@ import '../../PagesStyles/deliveryPageStyles/deliveryHomePageDashboard.css';
 
 function DeliveryHomePageDashboard() {
     return (
-        <div>
+        <div id='rootbody'>
 
             {/*<!-- SIDEBAR -->*/}
             <section id="sidebar">
@@ -301,7 +301,7 @@ function DeliveryHomePageDashboard() {
 
 
                 {/* <!-- PRODUCTS --> */}
-                <main style={{ display: 'none' }}>
+                <main >
                     <div className="head-title">
                         <div className="left">
                             <h1>Products</h1>
@@ -427,7 +427,7 @@ function DeliveryHomePageDashboard() {
 
 
                 {/* <!-- Orders --> */}
-                <main style={{ display: 'none' }}>
+                <main>
                     <div className="head-title">
                         <div className="left">
                             <h1>Orders</h1>

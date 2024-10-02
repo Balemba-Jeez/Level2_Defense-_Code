@@ -32,20 +32,32 @@ li {
 }
 
 
-html {
+/*html {
+    overflow-x: hidden;
+}*/
+
+/*body.dark {
+    --light: #0C0C1E;
+    --grey: #060714;
+    --dark: #FBFBFB;
+}*/
+
+/*body {
+    background: var(--grey);
+    overflow-x: hidden;
+}*/
+
+#rootbody {
+    background: var(--grey);
     overflow-x: hidden;
 }
 
-body.dark {
+#rootbody.dark {
     --light: #0C0C1E;
     --grey: #060714;
     --dark: #FBFBFB;
 }
 
-body {
-    background: var(--grey);
-    overflow-x: hidden;
-}
 
 
 /* Logo */

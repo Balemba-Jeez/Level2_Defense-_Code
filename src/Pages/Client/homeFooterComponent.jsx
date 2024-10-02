@@ -68,7 +68,7 @@ class HomeFooterComponent extends Component {
                             <tr>
                                 <td></td>
                                 <td>
-                                    <a href=""><img src={require('../../GetITONGooglePlay.jpeg')} alt="Translate icon" /></a>
+                                    <a href=""><img src={require('../../translateicon.png')} alt="Translate icon" /></a>
                                     <a href=""><p>English</p></a>
                                 </td>
                             </tr>

@@ -123,6 +123,7 @@ table {
     padding-bottom: 14px;
     padding-left: 0px;
     padding-right: 0px;
+    border-bottom: none;
 }
 
 .homefootercomponent .homefootertop .homefooterright table tr:nth-child(7) {
@@ -155,6 +156,7 @@ table {
     margin-right: 40px;
     padding-top: 40px;
     width: 1181px;
+    padding-bottom: 88px;
 }
 
 .homefootercomponent .homefooterbottom a {

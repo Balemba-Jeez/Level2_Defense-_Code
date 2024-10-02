@@ -141,13 +141,82 @@ class CheckOutPageComponent extends Component {
 
                                 <div className='deliveryformelement a'>
                                     <div className='leftside'>
-                                        {/*<img src="" alt="location" />*/}
+                                        {/*<img src="" alt="location" />
                                         <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"><title>Delivery bag</title><path d="M18 6V1H6v5H1v11c0 3.3 2.7 6 6 6h10c3.3 0 6-2.7 6-6V6h-5ZM9 4h6v2H9V4Zm11 13c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V9h16v8Z" fill="currentColor"></path></svg>
-                                        <p>Carrefour Regir</p>
+                                        <p>Carrefour Regir</p>*/}
+                                        <input type="text" name="clientfirstname" id="clientfirstname" placeholder='First name'
+
+                                            className=''
+                                        />
                                     </div>
                                     <div className='rightside'>
-                                        <button>Edit</button>
+                                        {/*<button>Edit</button>*/}
+                                        <input type="text" name="clientlastname" id="clientlastname" placeholder='Last name'
+
+                                            className=''
+                                        />
                                     </div>
+
+                                </div>
+
+                                <div className='deliveryformelement a af'>
+                                    <div className='leftside'>
+                                        {/*<img src="" alt="location" />
+                                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"><title>Delivery bag</title><path d="M18 6V1H6v5H1v11c0 3.3 2.7 6 6 6h10c3.3 0 6-2.7 6-6V6h-5ZM9 4h6v2H9V4Zm11 13c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V9h16v8Z" fill="currentColor"></path></svg>
+                                        <p>Carrefour Regir</p>*/}
+                                        <input type="email" name="clientemail" id="clientemail" placeholder='Email address'
+
+                                            className='ip'
+                                        />
+                                    </div>
+                                    {/*<div className='rightside'>
+                                        {/*<button>Edit</button>
+                                        <input type="text" name="merchantfirstname" id="merchantfirstname" placeholder='Last name'
+
+                                            className=''
+                                        />
+                                    </div>*/}
+
+                                </div>
+
+
+                                <div className='deliveryformelement a af'>
+                                    <div className='leftside'>
+                                        {/*<img src="" alt="location" />
+                                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"><title>Delivery bag</title><path d="M18 6V1H6v5H1v11c0 3.3 2.7 6 6 6h10c3.3 0 6-2.7 6-6V6h-5ZM9 4h6v2H9V4Zm11 13c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V9h16v8Z" fill="currentColor"></path></svg>
+                                        <p>Carrefour Regir</p>*/}
+                                        <input type="text" name="clientemail" id="clientemail" placeholder='Delivery location (Example, Carrefour Bastos)'
+
+                                            className='ip'
+                                        />
+                                    </div>
+                                    {/*<div className='rightside'>
+                                        {/*<button>Edit</button>
+                                        <input type="text" name="merchantfirstname" id="merchantfirstname" placeholder='Last name'
+
+                                            className=''
+                                        />
+                                    </div>*/}
+
+                                </div>
+
+                                <div className='deliveryformelement a af'>
+                                    <div className='leftside'>
+                                        {/*<img src="" alt="location" />
+                                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"><title>Delivery bag</title><path d="M18 6V1H6v5H1v11c0 3.3 2.7 6 6 6h10c3.3 0 6-2.7 6-6V6h-5ZM9 4h6v2H9V4Zm11 13c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V9h16v8Z" fill="currentColor"></path></svg>
+                                        <p>Carrefour Regir</p>*/}
+                                        <input type="number" name="clientcontactnumber" id="clientcontactnumber" placeholder='Delivery contact number (Example, 6XX XXX XXX)'
+
+                                            className='ip'
+                                        />
+                                    </div>
+                                    {/*<div className='rightside'>
+                                        {/*<button>Edit</button>
+                                        <input type="text" name="merchantfirstname" id="merchantfirstname" placeholder='Last name'
+
+                                            className=''
+                                        />
+                                    </div>*/}
 
                                 </div>
 

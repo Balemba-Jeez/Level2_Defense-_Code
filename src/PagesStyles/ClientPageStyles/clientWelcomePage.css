@@ -1,7 +1,20 @@
+body {
+    background: white;
+    overflow-x: none;
+}
+
+
+
 .clientwelcomepage {
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 80px;
+    background: white;
+    overflow-x: none;
+}
+
+td {
+    border-bottom: none;
 }

@@ -4,7 +4,7 @@ import DeliveryWPHeaderRightItem from './deliveryWPHeaderRighItem';
 
 function DeliveryAddItemModal() {
     return (
-        <div className='AddItemformpage'>
+        <div className='AddItemformpage' id='rootbody'>
 
             <div className='AddItemformppageheader'>
 

@@ -31,19 +31,30 @@ li {
     --light-orange: #FFE0D3;
 }
 
-html {
+/*html {
     overflow-x: hidden;
-}
+}*/
 
-body.dark {
+/*body.dark {
     --light: #0C0C1E;
     --grey: #060714;
     --dark: #FBFBFB;
-}
+}*/
 
-body {
+/*body {
     background: var(--grey);
     overflow-x: hidden;
+}*/
+
+#rootbody {
+    background: var(--grey);
+    overflow-x: hidden;
+}
+
+#rootbody.dark {
+    --light: #0C0C1E;
+    --grey: #060714;
+    --dark: #FBFBFB;
 }
 
 

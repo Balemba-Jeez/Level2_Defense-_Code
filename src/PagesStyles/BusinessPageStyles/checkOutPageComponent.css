@@ -208,7 +208,7 @@ input[type=number] {
     border: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 15px;
     padding: 16px 0px;
 }
 
@@ -221,12 +221,50 @@ input[type=number] {
     border-top: solid 1.5px #f3f3f3;
 }
 
+.af {
+    border: none;
+}
+
+
+
+.a input {
+    font-size: var(--fs-18);
+    font-weight: var(--fw-5);
+    padding-top: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+    border: solid 2px #f3f3f3;
+    background-color: #f3f3f3;
+    outline: none;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 16px;
+    transition-property: background-color, border;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.2, 0.8, 0.4, 1);
+
+}
+
+.a input:focus {
+    border: solid 2px black;
+    background-color: white;
+    outline: none;
+}
+
 .deliveryformelement .leftside {
     border: none;
-    display: flex;
+    /*display: flex;
     flex-direction: row;
-    gap: 0px 20px;
+    gap: 0px 20px;*/
     padding-top: 0;
+    width: 49%;
+}
+
+.deliveryformelement .rightside {
+    width: 49%;
 }
 
 .deliveryformelement .leftside h3 {
@@ -241,9 +279,13 @@ input[type=number] {
 
 }
 
-.deliveryformelement .leftside svg {}
+.ip {
+    width: 664.25px;
+    border: solid;
+}
 
-.deliveryformelement .leftside p {
+
+/*.deliveryformelement .leftside p {
     font-size: 16px;
     font-weight: 500;
     font-family: Arial,
@@ -251,9 +293,9 @@ input[type=number] {
         sans-serif;
     margin: 0;
     color: black;
-}
+}*/
 
-.deliveryformelement .rightside button {
+/*.deliveryformelement .rightside button {
     font-size: 14px;
     font-weight: 500;
     font-family: Arial,
@@ -274,7 +316,7 @@ input[type=number] {
 
 .deliveryformelement .rightside button:hover {
     background-color: #c5c5c5;
-}
+}*/
 
 .section-heading {
     color: black;
